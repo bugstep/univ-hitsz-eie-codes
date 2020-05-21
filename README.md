@@ -1,1 +1,1 @@
-# hitsz-information-theory
+# 哈尔滨工业大学（深圳）<br>&emsp;信息论与编码（实验）
