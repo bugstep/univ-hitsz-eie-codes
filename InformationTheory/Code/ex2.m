@@ -25,6 +25,8 @@ cnt_itea = 0;
 C_prev = 0;
 T_prev = ones(1, NT) / NT;
 
+% Blahut-Arimoto 算法
+
 while cnt_itea < max_itea
    T = T_prev;          % 发送概率
    R = sum(T' .* Pt);   % 收到概率
