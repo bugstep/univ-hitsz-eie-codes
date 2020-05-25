@@ -23,9 +23,9 @@ for j = 1:len_snr                            % increment SNR
       d = round(rand(1));                    % data
       if d == 0
          x_d = cos(pi / 6);                  % direct transmitter output	
-         x_q = 0;                         	% quadrature transmitter output	
+         x_q = 0;                            % quadrature transmitter output	
       else
-         x_d = 0;                         	% direct transmitter output
+         x_d = 0;                            % direct transmitter output
          x_q = sin(pi / 6);                  % quadrature transmitter output
       end   
       n_d = sigma * randn(1);                % direct noise component
