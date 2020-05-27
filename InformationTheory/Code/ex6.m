@@ -47,7 +47,7 @@ BER_2 = zeros(11, N);
 h = waitbar(0, 'iterations');
 
 for i = 1:N   
-   T = randi(2, 1, 1e8) - 1;
+   T = randi(2, 1, 1e7) - 1;
 
    for SNR = 0:10
       [BER_1(SNR+1, i), ...
