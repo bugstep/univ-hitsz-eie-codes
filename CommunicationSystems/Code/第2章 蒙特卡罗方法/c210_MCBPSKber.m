@@ -18,5 +18,5 @@ for k=1:length(z)
 end
 semilogy(EbNodB,BER,'o',EbNodB,BER_T)
 xlabel('E_b/N_0 - dB'); ylabel('Bit Error Rate'); grid
-legend('System Under Study','AWGN Reference')
+legend('System Under Study','AWGN Reference',0)
 % End of script file.

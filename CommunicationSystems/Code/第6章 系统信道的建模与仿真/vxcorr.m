@@ -18,9 +18,13 @@ lags = [-maxlag:maxlag]';			% vector of lags
 A = fft(a,2^nextpow2(2*M-1));		% fft of A
 B = fft(b,2^nextpow2(2*M-1));		% fft of B
 c = ifft(A.*conj(B));				% crosscorrelation
+%
 % Move negative lags before positive lags
+%
 c = [c(end-maxlag+1:end,1);c(1:maxlag+1,1)];
+%
 % Return row vector if a, b are row vectors
+%
 [nr nc]=size(a);
 if(nr>nc)
 	c=c.';
