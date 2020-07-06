@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="timer_preset" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+timer_preset YourInstanceName (
+    .a(a), // Bus [5 : 0] 
+    .spo(spo)); // Bus [19 : 0] 
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="timer_preset" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component timer_preset
+    port (
+    a: IN std_logic_VECTOR(5 downto 0);
+    spo: OUT std_logic_VECTOR(19 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : timer_preset
+        port map (
+            a =&gt; a,
+            spo =&gt; spo);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

@@ -1,0 +1,12 @@
+# Output products list for <timer_preset>
+timer_preset.asy
+timer_preset.mif
+timer_preset.ngc
+timer_preset.sym
+timer_preset.v
+timer_preset.veo
+timer_preset.vhd
+timer_preset.vho
+timer_preset.xco
+timer_preset_flist.txt
+timer_preset_xmdf.tcl

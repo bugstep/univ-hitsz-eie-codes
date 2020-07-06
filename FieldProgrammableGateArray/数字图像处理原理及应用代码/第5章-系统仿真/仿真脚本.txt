@@ -1,0 +1,155 @@
+
+
+#切换到工作目录
+cd F:/Projects/BeiJing/sim
+vsim -novopt work.histogram_2d_new_tb
+
+#结束仿真
+quit -sim
+
+#仿真video_cap模块 不优化
+vsim -novopt work.video_cap_tb
+
+
+##退出当前仿真
+quit -sim
+##仿真image_src模块 不优化
+vsim -novopt work.image_src
+
+##设置仿真时间分辨率
+##vsim -t 1ps   -lib work image_src
+
+add wave -position insertpoint  \
+sim:/image_src/iw \
+sim:/image_src/ih \
+sim:/image_src/dw \
+sim:/image_src/h_total \
+sim:/image_src/v_total \
+sim:/image_src/sync_b \
+sim:/image_src/sync_e \
+sim:/image_src/vld_b \
+sim:/image_src/reset_l \
+sim:/image_src/clk \
+sim:/image_src/src_sel \
+sim:/image_src/test_vsync \
+sim:/image_src/test_dvalid \
+sim:/image_src/clk_out \
+sim:/image_src/test_data \
+sim:/image_src/test_data_reg \
+sim:/image_src/test_vsync_temp \
+sim:/image_src/test_dvalid_tmp \
+sim:/image_src/test_dvalid_r \
+sim:/image_src/h_cnt \
+sim:/image_src/v_cnt \
+sim:/image_src/fp_r \
+##sim:/image_src/fp_w \
+##sim:/image_src/r \
+sim:/image_src/cnt
+
+##restart
+##≈48MHz clk
+force -freeze sim:/image_src/clk 1 0, 0 {12 ns} -r 24
+##reset
+force reset_l 0 
+run   5005 ns
+force reset_l 1
+run 21 ms
+
+
+
+restart
+force rst_n 0 
+run 30 ns
+force rst_n 1 
+force -repeat 20 clk 0 0,1 10 
+force -repeat 20000000 din_valid 0 0,1 3000 
+
+force din 23 
+run 20 ns
+
+
+vsim -novopt work.vga_ctrl
+#restart
+radix unsigned
+add wave -position insertpoint sim:/vga_ctrl/*
+force -repeat 40 clk 0 0,1 20 
+force reset 0 
+#force key_in 11111 
+run 1ms
+force reset 1 
+#force key_in 11110
+force rgb_in 010
+force din_valid 1 
+run 17 ms
+
+radix unsigned
+add wave -position insertpoint sim:/uart_tx_data/*
+restart
+force -repeat 40 clk 0 0,1 20 
+force reset_n 0 
+force tx_fifo_empty 0
+force tx_fifo_dout 85
+run 100ns
+force reset_n 1 
+run 2 ms
+
+
+ 
+
+clear
+radix hex
+force -repeat 50 clk 0 0,1 25 
+force reset 0 
+force ctrl  0
+run 200 ns
+force reset 1
+force read_addr 32098
+force num_read  39
+
+
+##
+force reg1 16#0A1F
+
+
+##设置仿真时间分辨率
+vsim -t 1ns   -lib work AES256_tb 
+
+##添加顶层所有的信号
+add wave *
+
+radix hex ##16进制显示
+radix unsigned ##10进制显示
+
+##编译xilinx库 VHDL 
+vcom –work simprim d:Xilinx/VHDL/src/simprims/simprim_Vcomponents.vhd
+vcom –work simprim d:Xilinx/VHDL/src/simprims/simprim_Vpackage.vhd
+vcom –work simprim d:Xilinx/VHDL/src/simprims/simprim_VITAL.vhd
+vcom –work unisim d:Xilinx/VHDL/src/unisims/unisim_VCOMP.vhd
+vcom –work unisim d:Xilinx/VHDL/src/unisims/unisim_VPKG.vhd
+vcom –work unisim d:Xilinx/VHDL/src/unisims/unisim_VITAL.vhd
+vcom –work unisim d:Xilinx/VHDL/src/unisims/unisim_VCFG4K.vhd
+vcom –work xilinxcorelib d:Xilinx/VHDL/src/ XilinxCoreLib/*.vhd
+
+
+##编译xilinx库 Verilog
+vlog –work simprim d:Xilinx/VHDL/src/simprims/simprim_Vcomponents.v
+vlog –work simprim d:Xilinx/VHDL/src/simprims/simprim_Vpackage.v
+vlog –work simprim d:Xilinx/VHDL/src/simprims/simprim_VITAL.v
+vlog –work unisim d:Xilinx/VHDL/src/unisims/unisim_VCOMP.v
+vlog –work unisim d:Xilinx/VHDL/src/unisims/unisim_VPKG.v
+vlog –work unisim d:Xilinx/VHDL/src/unisims/unisim_VITAL.v
+vlog –work unisim d:Xilinx/VHDL/src/unisims/unisim_VCFG4K.v
+vlog –work xilinxcorelib d:Xilinx/VHDL/src/ XilinxCoreLib/*.v
+
+
+
+#新建工程 
+
+project new D:/work/test
+project open test
+project addfile test.vhd
+
+project compileall
+
+vsim -L lpm -L altera 
+

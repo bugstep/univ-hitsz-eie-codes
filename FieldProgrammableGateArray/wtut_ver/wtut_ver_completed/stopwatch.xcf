@@ -1,0 +1,13 @@
+NET "CLK" TNM_NET = "CLK_GROUP";
+TIMESPEC "TS_CLK" = PERIOD "CLK_GROUP" 20 ns;
+BEGIN MODEL stopwatch
+  NET "clk" LOC = "E12";
+  NET "sf_d<7>" LOC = "Y15";
+  NET "sf_d<6>" LOC = "AB16"; 
+  NET "sf_d<5>" LOC = "Y16";
+  NET "sf_d<4>" LOC = "AA12";
+  NET "sf_d<3>" LOC = "AB12";
+  NET "sf_d<2>" LOC = "AB17";
+  NET "sf_d<1>" LOC = "AB18";
+  NET "sf_d<0>" LOC = "Y13";
+END;

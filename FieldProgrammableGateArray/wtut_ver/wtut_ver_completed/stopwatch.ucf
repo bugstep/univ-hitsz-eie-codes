@@ -1,0 +1,51 @@
+#INPUTS
+NET "clk" IOSTANDARD = "LVCMOS33";
+NET "clk" LOC = "E12";
+NET "reset" IOSTANDARD = "LVTTL";
+NET "reset" PULLDOWN; 
+NET "strtstop" IOSTANDARD = "LVTTL";
+NET "strtstop" PULLDOWN; 
+NET "lap_load" IOSTANDARD = "LVTTL";
+NET "lap_load" PULLDOWN; 
+NET "mode" IOSTANDARD = "LVTTL";
+NET "mode" PULLDOWN; #
+#OUTPUTS
+NET "lcd_e" IOSTANDARD = "LVTTL";
+NET "lcd_e" DRIVE = 4;
+NET "lcd_e" SLEW = QUIETIO;
+NET "lcd_rs" IOSTANDARD = "LVTTL";
+NET "lcd_rs" DRIVE = 4;
+NET "lcd_rs" SLEW = QUIETIO;
+NET "lcd_rw" IOSTANDARD = "LVTTL";
+NET "lcd_rw" DRIVE = 4;
+NET "lcd_rw" SLEW = QUIETIO;
+NET "sf_d<7>" LOC = Y15 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<6>" LOC = AB16 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<5>" LOC = Y16 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<4>" LOC = AA12 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<3>" LOC = AB12 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<2>" LOC = AB17 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<1>" LOC = AB18 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;
+NET "sf_d<0>" LOC = Y13 | IOSTANDARD = "LVTTL" | DRIVE = 4 | SLEW = QUIETIO;;
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 7.0 ns INPUT_JITTER 60 ps;
+INST "sf_d<0>" TNM = display_grp;
+INST "sf_d<1>" TNM = display_grp;
+INST "sf_d<2>" TNM = display_grp;
+INST "sf_d<3>" TNM = display_grp;
+INST "sf_d<4>" TNM = display_grp;
+INST "sf_d<5>" TNM = display_grp;
+INST "sf_d<6>" TNM = display_grp;
+INST "sf_d<7>" TNM = display_grp;
+OFFSET = IN 6 ns BEFORE "clk";
+OFFSET = OUT 38 ns AFTER "clk";
+TIMEGRP "display_grp" OFFSET = OUT 32 ns AFTER "clk";
+NET "lcd_e" LOC = AB4;
+NET "lcd_rs" LOC = Y14;
+NET "lcd_rw" LOC = W13;
+NET "lap_load" LOC = T16;
+NET "mode" LOC = T14;
+NET "strtstop" LOC = T15;
+NET "reset" LOC = U15;
+
+
