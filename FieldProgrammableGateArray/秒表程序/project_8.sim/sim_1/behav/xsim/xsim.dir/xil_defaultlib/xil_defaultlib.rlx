@@ -1,0 +1,15 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/clk_div_262k.v,1594003798,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/debounce.v,,clk_div_262k,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/debounce.v,1594004681,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/lcd_control.v,,debounce,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/lcd_control.v,1173251088,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/statmach.v,,lcd_control,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/statmach.v,1173069492,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/stopwatch.v,,statmach,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/stopwatch.v,1594000011,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/time_cnt.v,,stopwatch,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/FileRecv/wtut_ver/wtut_ver_completed/time_cnt.v,1173087930,verilog,,E:/119/project_8/project_8.srcs/sources_1/new/stopwatch_tb.v,,time_cnt,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/project_8/project_8.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/119/project_8/project_8.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1593999648,verilog,,E:/119/FileRecv/wtut_ver/wtut_ver_completed/clk_div_262k.v,,blk_mem_gen_0,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/project_8/project_8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1593999884,verilog,,E:/119/project_8/project_8.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,clk_wiz_0,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/project_8/project_8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1593999884,verilog,,E:/119/project_8/project_8.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/119/project_8/project_8.srcs/sources_1/new/stopwatch_tb.v,1594001916,verilog,,,,stopwatch_tb,,,../../../../project_8.srcs/sources_1/ip/clk_wiz_0,,,,,

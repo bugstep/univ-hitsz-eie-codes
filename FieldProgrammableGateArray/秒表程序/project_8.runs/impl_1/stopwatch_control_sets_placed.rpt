@@ -1,0 +1,77 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  6 16:36:15 2020
+| Host         : stu32 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stopwatch_control_sets_placed.rpt
+| Design       : stopwatch
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |               6 |            3 |
+| No           | Yes                   | No                     |              33 |            9 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |              26 |           13 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+|       Clock Signal      |             Enable Signal            |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+|  dcm_inst/inst/clk_out1 |                                      |                                            |                1 |              1 |
+|  clk_100_BUFG           | timer_inst/hundredths_cnt[3]_i_1_n_0 | timer_state/AR[0]                          |                3 |              4 |
+|  clk_100_BUFG           | timer_inst/mins_cnt[3]_i_1_n_0       | timer_state/AR[0]                          |                3 |              4 |
+|  clk_100_BUFG           | timer_inst/ones_cnt[3]_i_1_n_0       | timer_state/AR[0]                          |                2 |              4 |
+|  clk_100_BUFG           | timer_inst/tens_cnt[3]_i_1_n_0       | timer_state/AR[0]                          |                2 |              4 |
+|  clk_100_BUFG           | timer_inst/tenths_cnt[3]_i_1_n_0     | timer_state/AR[0]                          |                2 |              4 |
+|  dcm_inst/inst/clk_out1 | display_ctrl/p_0_in0                 |                                            |                1 |              4 |
+|  clk_100_BUFG           |                                      | timer_state/FSM_sequential_sreg[3]_i_2_n_0 |                3 |              6 |
+|  clk_100_BUFG           | timer_state/E[0]                     | timer_state/address_reg[0][0]              |                1 |              6 |
+|  clk_100_BUFG           |                                      |                                            |                3 |              9 |
+|  dcm_inst/inst/clk_out1 |                                      | display_ctrl/p_0_in0                       |                4 |             13 |
+|  dcm_inst/inst/clk_out1 |                                      | clk_divider/cnt[0]_i_1_n_0                 |                5 |             20 |
++-------------------------+--------------------------------------+--------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     6 |
+| 6      |                     2 |
+| 9      |                     1 |
+| 13     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+
