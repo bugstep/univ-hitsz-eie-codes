@@ -1,0 +1,241 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="overflow_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="quantization_adjust" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_fixed_base" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_double" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="to_float" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &lt;&lt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="operator &gt;&gt;=" label="">
+<pragma name="INLINE">
+<option name="self" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="M"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::shift_up" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::shift_up" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::shift_down" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::shift_down" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::insert_bottom" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::insert_top" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_linebuffer&lt;T, LROW, LCOL&gt;::getval" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="M"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_right" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_right" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_right" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_left" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_left" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_left" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_up" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_up" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_up" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_down" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_down" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::shift_down" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::insert" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="ap_window&lt;T, LROW, LCOL&gt;::getval" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="inter_pix"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="inter_pix"/>
+<option name="core" value="AXIS"/>
+<option name="metadata" value="&quot;-bus_bundle INPUT_STREAM&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="inter_pix"/>
+<option name="core" value="AXIS"/>
+<option name="port_map" value="{{inter_pix_data_V TDATA} {inter_pix_strb_V TSTRB} {inter_pix_user_V TUSER} {inter_pix_last_V TLAST} {inter_pix_tdest_V TDEST}}"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="out_pix"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="out_pix"/>
+<option name="core" value="AXIS"/>
+<option name="metadata" value="&quot;-bus_bundle OUTPUT_STREAM&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="out_pix"/>
+<option name="core" value="AXIS"/>
+<option name="port_map" value="{{out_pix_data_V TDATA} {out_pix_strb_V TSTRB} {out_pix_user_V TUSER} {out_pix_last_V TLAST} {out_pix_tdest_V TDEST}}"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="rows"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="cols"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="rows"/>
+<option name="core" value="AXI_SLAVE"/>
+<option name="metadata" value="&quot;-bus_bundle CONTROL_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="cols"/>
+<option name="core" value="AXI_SLAVE"/>
+<option name="metadata" value="&quot;-bus_bundle CONTROL_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="AXI_SLAVE"/>
+<option name="port_map" value="{{ap_start START} {ap_done DONE} {ap_idle IDLE} {ap_return RETURN}}"/>
+<option name="metadata" value="&quot;-bus_bundle CONTROL_BUS&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="LOOP_FLATTEN">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="&amp;buff_A"/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sobel_filter" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

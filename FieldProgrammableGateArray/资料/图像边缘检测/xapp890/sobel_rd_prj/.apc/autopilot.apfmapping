@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.cpp" path="C:\WORK\sobel_variable\axi_sobel\axi_sobel\sobel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="ap_bmp.cpp" path="C:\WORK\sobel_variable\axi_sobel\axi_sobel\ap_bmp.cpp"/>
+    <originFiles name="result_1080p_golden.bmp" path="C:\WORK\sobel_variable\axi_sobel\axi_sobel\result_1080p_golden.bmp"/>
+    <originFiles name="sobel_test.cpp" path="C:\WORK\sobel_variable\axi_sobel\axi_sobel\sobel_test.cpp"/>
+    <originFiles name="test_1080p.bmp" path="C:\WORK\sobel_variable\axi_sobel\axi_sobel\test_1080p.bmp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

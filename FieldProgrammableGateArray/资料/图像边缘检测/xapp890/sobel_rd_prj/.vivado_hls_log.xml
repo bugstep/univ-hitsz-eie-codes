@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [XFORM-124] Array 'inter_pix.data.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.084-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'inter_pix.strb.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.087-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'inter_pix.user.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.089-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'inter_pix.last.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.091-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'inter_pix.tdest.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.093-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'out_pix.data.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.095-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'out_pix.strb.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.097-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'out_pix.user.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.099-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'out_pix.last.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.100-0700" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'out_pix.tdest.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="sobel_rd_prj" solutionName="solution1" date="2012-09-06T15:26:35.102-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

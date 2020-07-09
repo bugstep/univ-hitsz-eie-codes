@@ -1,0 +1,489 @@
+@I [HLS-0] Workspace C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1 opened at Thu Sep 06 15:25:03 -0700 2012
+@I [HLS-100] Command "config_clock -quiet -name - -period 5 -default=false "
+@I [SYN-201] Setting up clock with a period of 5ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0.003 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0.004 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.021 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.043 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.021 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.103 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.023 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.072 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.088 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.093 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0.001 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.015 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx_fpv6_old.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx_fpv6.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.041 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.065 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.082 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.36 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0.001 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.013 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.007 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.022 sec.
+@I [HLS-100] Command "create_clock -period 5 "
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.01 sec.
+@I [HLS-100] Command "source ./sobel_rd_prj/solution1/directives.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Importing test bench file 'test_1080p.bmp' ... 
+@0 [HLS-0] Importing test bench file 'test_1080p.bmp' ... 
+@I [HLS-10] Importing test bench file 'sobel_test.cpp' ... 
+@0 [HLS-0] Importing test bench file 'sobel_test.cpp' ... 
+@I [HLS-10] Importing test bench file 'result_1080p_golden.bmp' ... 
+@0 [HLS-0] Importing test bench file 'result_1080p_golden.bmp' ... 
+@I [HLS-10] Importing test bench file 'ap_bmp.cpp' ... 
+@0 [HLS-0] Importing test bench file 'ap_bmp.cpp' ... 
+@I [HLS-10] Importing design file 'sobel.cpp' ... 
+@0 [HLS-0] Importing design file 'sobel.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc  -DAESL_SYN -D__SYNTHESIS__ -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc"   -D "__asm__(...)=" -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit  "sobel.cpp"  -include etc/autopilot_ssdm_op.h -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.00.o"
+
+@I [HLS-0] Stack dump:
+0.	Program arguments: c:/xilinx/vivado_hls/2012.2/win_x86/tools/llvm_gcc/bin/../libexec/gcc/i686-pc-mingw32/4.2.1/cc1plus.exe -quiet -I C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot -I C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc -iprefix c:\xilinx\vivado_hls\2012.2\win_x86\tools\llvm_gcc\bin\../lib/gcc/i686-pc-mingw32/4.2.1/ -DAESL_SYN -D__SYNTHESIS__ -D __asm__(...)= -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -include etc/autopilot_ssdm_op.h sobel.cpp -emit-llvm-bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.00.o -quiet -dumpbase sobel.cpp -mllvm -disable-llvm-optzns -mtune=generic -auxbase-strip C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.00.o -O0 -fno-math-errno -fno-threadsafe-statics -fno-use-cxa-atexit 
+0075F73E (0x0028FC70 0x00000000 0x00000000 0x00750DE1)
+00761D48 (0x0028FC70 0x0DEAEB40 0x00000044 0x00000000)
+007618EC (0x0028FC70 0x0DEAEB40 0x0028FC88 0x0E0C90A8)
+0076260E (0x0028FC70 0x0DFEA0F0 0x0028F938 0x005DE633)
+0075F895 (0x0028FC70 0x0DFEA0F0 0x00000000 0x0414F284)
+00775CD3 (0x0028FC70 0x0DFEA118 0x00000000 0x74F89D45)
+0075FDF1 (0x0028FC70 0x0DFEA118 0x00000000 0x00000000)
+0077C39E (0x0028FC70 0x0DDB7100 0x0028FC88 0x0E0FB3FC)
+005D07F6 (0x0DDB7100 0xFFFFFFFE 0x74F898DA 0x0062D229)
+005ED695 (0x0DDB7100 0x0028FD90 0x74F898DA 0x0E021A10)
+00483641 (0x0DDB7100 0x00000004 0x00000000 0x00000000)
+0056D404 (0x04D11CE8 0x00000004 0x0028FE78 0x00000000)
+0056E305 (0x0C841D78 0x0043BB04 0x0028FE50 0x05FC1000)
+0043FB0F (0x00000001 0x00000000 0x0478F82C 0x04783C77)
+004C8FBD (0x00000000 0x00F21D17 0x00CE6CB8 0x00000000)
+005ABCD6 (0x00000021 0x04788E30 0x0028FF08 0x0028FFC4)
+004D1697 (0x00000021 0x04788E30 0x047824E8 0xFFFFFFFF)
+004010DB (0x00000001 0x00000000 0x00000000 0x00000000)
+00401178 (0x7EFDE000 0x0028FFD4 0x774F9F42 0x7EFDE000)
+76543677 (0x7EFDE000 0x745F4264 0x00000000 0x00000000), BaseThreadInitThunk()+0018 bytes(s)
+774F9F42 (0x00401160 0x7EFDE000 0x00000000 0x00000000), RtlInitializeExceptionChain()+0099 bytes(s)
+774F9F15 (0x00401160 0x7EFDE000 0x00000000 0x78746341), RtlInitializeExceptionChain()+0054 bytes(s)
+sobel.cpp: In function 'void sobel_filter(AXI_PIXEL (*)[1920], AXI_PIXEL (*)[1920], int, int)':
+sobel.cpp:111: internal compiler error: Segmentation fault
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <URL:http://llvm.org/bugs/> for instructions.
+@I [HLS-0] Syntax Checker time: 6 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -CC -E "sobel.cpp"   -DAESL_SYN -D__SYNTHESIS__ -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc"   -D "__asm__(...)=" -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D "__asm__(...)=" -include etc/autopilot_ssdm_op.h -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-10] Analyzing the design file ...
+@I [HLS-0] Marker-Pragma convertor: C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp.ap-line.cpp C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/jre/bin/java -Xmx512m -classpath   "C:/Xilinx/Vivado_HLS/2012.2/common/lib/autopilot.sourceprocessor.jar;C:/Xilinx/Vivado_HLS/2012.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Xilinx/Vivado_HLS/2012.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Xilinx/Vivado_HLS/2012.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Xilinx/Vivado_HLS/2012.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar;C:/Xilinx/Vivado_HLS/2012.2/common/lib/jargs.jar;C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20110605-0747.jar;C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20110605-0747.jar;C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20110520-1406.jar;C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Xilinx/Vivado_HLS/2012.2/Win_x86/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp.ap-line.cpp"  -m sobel_filter -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/solution1.directive --source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel.cpp --error C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db --ce --tcl C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db --ve --vetcl C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db
+
+@I [HLS-0] Marker-Pragma convertor: C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pp.0.cpp.ap-cdt.cpp C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.0.cpp C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-0] CDT processor time: 67 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -CC -E "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.1.cpp"   -DAESL_SYN -D__SYNTHESIS__ -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc"   -D "__asm__(...)=" -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D "__asm__(...)=" -include etc/autopilot_ssdm_op.h -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w  "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.2.cpp"  -DAESL_SYN -D__SYNTHESIS__ -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc"   -D "__asm__(...)=" -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -g -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.bc"
+@I [HLS-0] exec llvm-gcc  -w  "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.pragma.2.cpp"  -DAESL_SYN -D__SYNTHESIS__ -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot" -I "C:/Xilinx/Vivado_HLS/2012.2/common/technology/autopilot/ap_sysc"   -D "__asm__(...)=" -D__SYNTHESIS__ -D__HLS_SYN__ -DAESL_SYN -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -g -g -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.g.bc"
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013 sec.
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/ve_warning.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.bc"  -disable-opt  -LC:/Xilinx/Vivado_HLS/2012.2/Win_x86/lib -lm_basic -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel.g.bc"  -disable-opt  -LC:/Xilinx/Vivado_HLS/2012.2/Win_x86/lib -lm_basic -o "C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0 sec.
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] std xform: transform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loopsimplify -indvars -instcombine  -simplifycfg -mem2reg -loopsimplify -indvars -instcombine   -dse -adce  -break-crit-edges -deadtypeelim -simplifycfg -loop-delete  -global-array-opt  -find-syn-modules -top sobel_filter  -deadtypeelim -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-0] syn check 1/2: transform -syn-check -check-rec-only -disaggr -norm-name -deadtypeelim -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -deadargelim -promote-global-argument  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -norm-name -deadtypeelim -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce  -interface-gen -constprop -dse -dce  -globaldce    C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.1.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] std xform: transform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loopsimplify -indvars -instcombine  -simplifycfg -mem2reg -loopsimplify -indvars -instcombine  -gvn -gvn -instcombine -dse -adce  -break-crit-edges -deadtypeelim -simplifycfg -loop-delete  -global-array-opt  -find-syn-modules -top sobel_filter  -deadtypeelim -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.1.bc -f  -phase std-opt
+@I [XFORM-603] Inlining function 'ap_linebuffer<unsigned char, 3, 1920>::shift_up' into 'sobel_filter' (sobel.cpp:144).
+@I [XFORM-603] Inlining function 'ap_linebuffer<unsigned char, 3, 1920>::getval' into 'sobel_filter' (sobel.cpp:167).
+@I [XFORM-603] Inlining function 'ap_linebuffer<unsigned char, 3, 1920>::getval' into 'sobel_filter' (sobel.cpp:145).
+@I [XFORM-603] Inlining function 'ap_linebuffer<unsigned char, 3, 1920>::insert_bottom' into 'sobel_filter' (sobel.cpp:158).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::shift_right' into 'sobel_filter' (sobel.cpp:162).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::insert' into 'sobel_filter' (sobel.cpp:169).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::insert' into 'sobel_filter' (sobel.cpp:168).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::insert' into 'sobel_filter' (sobel.cpp:167).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::getval' into 'sobel_operator' (sobel.cpp:90).
+@I [XFORM-603] Inlining function 'ap_window<unsigned char, 3, 3>::getval' into 'sobel_operator' (sobel.cpp:87).
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-0] presyn 1: transform  -directive-preproc -mem2reg -dse -dce  -disaggr -norm-name -deadtypeelim -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce  -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -global-constprop -deadargelim  -func-legal -instcombine -dce  -data-pack -instcombine -dce -func-legal  -loopsimplify -indvars -instcombine  -gvn -loopsimplify -loop-merge -mem2reg -dce -simplifycfg  -find-region -instcombine  -inst-simplify  -indvars -auto-loop-unroll -loopsimplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -dce  -pointer-simplify -dce  -array-transform-check  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -array-partition -instcombine -dce  -global-constprop -deadargelim -ptrArgReplace -mem2reg  -func-legal -instcombine -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -arraycheck -bitwidthmin -on-by-dataflow  -instcombine -simplifycfg -dce -loopsimplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce  -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce      -simplifycfg -dce -loop-delete  -norm-name  C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.1.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-502] Unrolling all loops for pipelining in function 'sobel_operator' (sobel.cpp:61).
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1.1' (sobel.cpp:116) in function 'sobel_filter' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1' (sobel.cpp:83) in function 'sobel_operator' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (sobel.cpp:84) in function 'sobel_operator' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.1' (ap_video.h:116) in function 'sobel_filter' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2' (ap_video.h:226) in function 'sobel_filter' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2.1' (ap_video.h:228) in function 'sobel_filter' completely.
+@I [XFORM-101] Partitioning array 'buff_A.M' (sobel.cpp:127) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_B.M.B.V' (sobel.cpp:128) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_B.M.G.V' (sobel.cpp:128) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_B.M.R.V' (sobel.cpp:128) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_C.M' (sobel.cpp:129) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_C.M.0' (sobel.cpp:129) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_C.M.1' (sobel.cpp:129) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'buff_C.M.2' (sobel.cpp:129) in dimension 1 completely.
+@I [XFORM-602] Inlining function 'rgb2y' into 'sobel_filter' (sobel.cpp:158) automatically.
+@I [XFORM-602] Inlining function 'sobel_operator' into 'sobel_filter' (sobel.cpp:181) automatically.
+@W [XFORM-124] Array 'inter_pix.data.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'inter_pix.strb.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'inter_pix.user.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'inter_pix.last.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'inter_pix.tdest.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'out_pix.data.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'out_pix.strb.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'out_pix.user.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'out_pix.last.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@W [XFORM-124] Array 'out_pix.tdest.V' (sobel.cpp:111) may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+@I [HLS-0] Presyn 1 time: 0 seconds per iteration
+@I [HLS-0] presyn 2: transform -keep-callgraph -scalarrepl -mem2reg  -indvars -loop-bound  -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [XFORM-401] Performing if-conversion on hyperblock to (sobel.cpp:185) in function 'sobel_filter'... converting 9 basic blocks.
+@I [XFORM-11] Balancing expressions in function 'sobel_filter' (sobel.cpp:111)...10 expression(s) balanced.
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-0] build ssdm: transform -function-uniquify -auto-function-inline  -loopsimplify -indvars -licm -loop-dep  -loop-bound -licm -loopsimplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-map -dce -func-legal  -gvn -adce -instcombine -simplifycfg -loopsimplify   -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify -doublePtrElim  -dce -doublePtrSimplify -promote-dbg-pointer -dce  -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -instcombine  -loop-rot -constprop -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loopsimplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -bitwidthmin  -directive-preproc -inst-simplify -dce  -interface-gen -gvn -mem2reg -instcombine -dce  -loop-bound  -instcombine -simplifycfg -loopsimplify  -clean-region -io-protocol  -find-region -mem2reg  -loopsimplify -phi-opt  -inst-simplify -inst-rectify -adce -simplifycfg  -strip-dead-prototypes  -interface-lower -bitop-lower -directive-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -mergereturn -inst-simplify -dce -bitop-lower  -loop-rewind -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.2.bc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [ANALYSIS-51] Setting 'None' inter dependency for variable 'buff_A_M_0' (sobel.cpp:127).
+@I [ANALYSIS-51] Setting 'None' inter dependency for variable 'buff_A_M_1' (sobel.cpp:127).
+@I [ANALYSIS-51] Setting 'None' inter dependency for variable 'buff_A_M_2' (sobel.cpp:127).
+@I [HLS-0] Build ssdm time: 0 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 3.682 sec.
+@I [HLS-111] Elapsed time: 90.563 seconds; memory usage: 39 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 88.325 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'sobel_filter' ...
+@0 [HLS-0] Synthesizing 'sobel_filter' ...
+@I [HLS-100] Command "ap_set_top_model sobel_filter "
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "get_model_list sobel_filter -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "preproc_iomode -model sobel_filter "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0.005 sec.
+@I [HLS-100] Command "get_model_list sobel_filter -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0 sec.
+@I [HLS-0] Model list for configure: sobel_filter
+@I [HLS-0] Configuring Module : sobel_filter ...
+@I [HLS-100] Command "set_default_model sobel_filter "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "apply_spec_resource_limit sobel_filter "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0 sec.
+@I [HLS-0] Model list for preprocess: sobel_filter
+@I [HLS-0] Preprocessing Module: sobel_filter ...
+@I [HLS-100] Command "set_default_model sobel_filter "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "cdfg_preprocess -model sobel_filter "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.006 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sobel_filter "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.003 sec.
+@I [HLS-0] Model list for synthesis: sobel_filter
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sobel_filter' 
+@0 [HLS-0] -- Scheduling module 'sobel_filter' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sobel_filter "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "schedule -model sobel_filter "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 12.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.206 sec.
+@I [HLS-111] Elapsed time: 0.304 seconds; memory usage: 40 MB.
+@I [HLS-100] Command "report -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.052 sec.
+@I [HLS-100] Command "db_write -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.067 sec.
+@I [HLS-0] Finish scheduling sobel_filter.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sobel_filter' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'sobel_filter' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sobel_filter "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "bind -model sobel_filter "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=sobel_filter
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture binding ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding resource limited operations ...
+@I [BIND-100] Finished micro-architecture binding.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.039 sec.
+@I [HLS-111] Elapsed time: 0.174 seconds; memory usage: 40 MB.
+@I [HLS-100] Command "report -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/report/sobel_filter.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.011 sec.
+@I [HLS-100] Command "report -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.119 sec.
+@I [HLS-100] Command "db_write -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.071 sec.
+@I [HLS-0] Finish binding sobel_filter.
+@I [HLS-100] Command "get_model_list sobel_filter -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess sobel_filter "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.001 sec.
+@I [HLS-0] Model list for RTL generation: sobel_filter
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sobel_filter' 
+@0 [HLS-0] -- Generating RTL for module 'sobel_filter' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model sobel_filter -vendor xilinx -mg_file C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.compgen.tcl "
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|inter_pix_data_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|inter_pix_strb_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|inter_pix_user_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|inter_pix_last_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|inter_pix_tdest_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|out_pix_data_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|out_pix_strb_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|out_pix_user_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|out_pix_last_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|out_pix_tdest_V' to 'ap_fifo'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|rows' to 'ap_none'.
+@I [RTGEN-500] Setting IO mode on port 'sobel_filter|cols' to 'ap_none'.
+@I [RTGEN-100] Module generated: sobel_filter_grp_fu_554_ACMP_mul_1|sobel_filter_grp_fu_554_ACMP_mul_1_U.
+@I [RTGEN-100] Module generated: sobel_filter_grp_fu_589_ACMP_mul_2|sobel_filter_grp_fu_589_ACMP_mul_2_U.
+@I [RTGEN-100] Finished creating RTL model for 'sobel_filter'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.412 sec.
+@I [HLS-111] Elapsed time: 0.629 seconds; memory usage: 41 MB.
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003 sec.
+@I [HLS-100] Command "gen_rtl sobel_filter -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/systemc/sobel_filter -synmodules sobel_filter "
+@I [WSYSC-301] Generating RTL SystemC for 'sobel_filter'.
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.052 sec.
+@I [HLS-100] Command "gen_rtl sobel_filter -istop -style xilinx -f -lang vhdl -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/vhdl/sobel_filter "
+@I [WVHDL-304] Generating RTL VHDL for 'sobel_filter'.
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.055 sec.
+@I [HLS-100] Command "gen_rtl sobel_filter -istop -style xilinx -f -lang vlog -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/verilog/sobel_filter "
+@I [WVLOG-307] Generating RTL Verilog for 'sobel_filter'.
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.056 sec.
+@I [HLS-100] Command "export_constraint_db -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "gen_tb_info sobel_filter -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.009 sec.
+@I [HLS-100] Command "report -model sobel_filter -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/report/sobel_filter.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.052 sec.
+@I [HLS-100] Command "report -model sobel_filter -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/syn/report/sobel_filter.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.035 sec.
+@I [HLS-100] Command "report -model sobel_filter -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.146 sec.
+@I [HLS-100] Command "db_write -model sobel_filter -o C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.112 sec.
+@I [HLS-100] Command "sc_get_clocks sobel_filter "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0 sec.
+@I [HLS-0] Model list for RTL component generation: sobel_filter
+@I [HLS-0] Handling components in module [sobel_filter] ... 
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.compgen.tcl "
+@I [HLS-0] Found component sobel_filter_grp_fu_554_ACMP_mul_1.
+@I [HLS-0] Append model sobel_filter_grp_fu_554_ACMP_mul_1
+@I [HLS-0] Found component sobel_filter_grp_fu_589_ACMP_mul_2.
+@I [HLS-0] Append model sobel_filter_grp_fu_589_ACMP_mul_2
+@I [HLS-0] Found component sobel_filter_buff_A_M_0.
+@I [HLS-0] Append model sobel_filter_buff_A_M_0
+@I [HLS-0] Found component sobel_filter_buff_A_M_1.
+@I [HLS-0] Append model sobel_filter_buff_A_M_1
+@I [HLS-0] Found component sobel_filter_buff_A_M_2.
+@I [HLS-0] Append model sobel_filter_buff_A_M_2
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [HLS-0] Append model sobel_filter
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: sobel_filter_grp_fu_554_ACMP_mul_1 sobel_filter_grp_fu_589_ACMP_mul_2 sobel_filter_buff_A_M_0 sobel_filter_buff_A_M_1 sobel_filter_buff_A_M_2 sobel_filter
+@I [HLS-0] To file: write model sobel_filter_grp_fu_554_ACMP_mul_1
+@I [HLS-0] To file: write model sobel_filter_grp_fu_589_ACMP_mul_2
+@I [HLS-0] To file: write model sobel_filter_buff_A_M_0
+@I [HLS-0] To file: write model sobel_filter_buff_A_M_1
+@I [HLS-0] To file: write model sobel_filter_buff_A_M_2
+@I [HLS-0] To file: write model sobel_filter
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-100] Command "export_ssdm C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.012 sec.
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.022 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007 sec.
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.027 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2012.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002 sec.
+@I [HLS-100] Command "source C:/WORK/sobel_variable/axi_sobel/axi_sobel/sobel_rd_prj/solution1/.autopilot/db/sobel_filter.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.58 sec.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 3.002 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 91.327 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.005 sec.

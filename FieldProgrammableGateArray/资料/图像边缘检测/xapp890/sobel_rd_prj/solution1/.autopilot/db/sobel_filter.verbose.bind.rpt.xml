@@ -1,0 +1,130 @@
+<profile>
+
+<section name = "Report Version" level="0">
+<item name = "Tool">Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC</item>
+<item name = "Version">2012.2</item>
+<item name = "Build date">Sun Jul 15 23:22:03 PM 2012</item>
+<item name = "Copyright (C)">2012 Xilinx Inc. All rights reserved.</item>
+</section>
+
+<section name = "General Information" level="0">
+<item name = "Project">sobel_rd_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Date">Thu Sep 06 15:26:32 2012
+</item>
+</section>
+
+<section name = "User Assignments" level="0">
+<item name = "Product Family">zynq zynq_fpv6 </item>
+<item name = "Part">xc7z020clg484-1</item>
+<item name = "Top Model name">sobel_filter</item>
+<item name = "Target clock period (ns)">5.00</item>
+<item name = "Clock uncertainty (ns)">0.62</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Summary of timing analysis">
+<section name = "" level="1">
+<item name = "Estimated clock period (ns)">4.27</item>
+</section>
+</item>
+<item name = "Summary of overall latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Best-case latency">?</item>
+<item name = "Average-case latency">?</item>
+<item name = "Worst-case latency">?</item>
+</section>
+</item>
+<item name = "Summary of loop latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Loop 1">
+<section name = "" level="1">
+<item name = "Trip count">?</item>
+<item name = "Latency">?</item>
+<item name = "Loop 1.1">
+<section name = "" level="1">
+<item name = "Trip count">?</item>
+<item name = "Latency">?</item>
+<item name = "Pipeline II">1</item>
+<item name = "Pipeline depth">12</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Area Estimates" level="0">
+<item name = "Summary"><table name="(Target device: xc7z020clg484-1)" hasTotal="1">
+<keys size="5">BRAM_18K, DSP48E, FF, LUT, SLICE</keys>
+<column name="Component">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 13300</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, 0, 0</specialColumn>
+</table>
+</item>
+<item name = "Details">
+<section name = "" level="1">
+<item name = "Component"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="0"></keys>
+</table>
+</item>
+</section>
+</item>
+<item name = "Hierarchical Multiplexer Count"><table name="" hasTotal="1">
+<keys size="3">Size, Bits, Count</keys>
+<column name="(This level)">0, 0, 0</column>
+</table>
+</item>
+</section>
+
+<section name = "Power Estimate" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="0"></keys>
+<column name="Component"></column>
+<column name="Expression"></column>
+<column name="FIFO"></column>
+<column name="Memory"></column>
+<column name="Multiplexer"></column>
+<column name="Register"></column>
+</table>
+</item>
+<item name = "Hierarchical Register Count"><table name="" hasTotal="1">
+<keys size="1">Count</keys>
+<column name="(This level)">0</column>
+</table>
+</item>
+</section>
+
+<section name = "Interface Summary" level="0">
+<item name = "Interfaces"><table name="" hasTotal="0">
+<keys size="7">Object, Type, Scope, IO Protocol, IO Config, Dir, Bits</keys>
+</table>
+</item>
+</section>
+</profile>

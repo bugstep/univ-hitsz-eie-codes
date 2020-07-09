@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:busDefinition xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xylon</spirit:vendor>
+  <spirit:library>logicbricks</spirit:library>
+  <spirit:name>parallel_video</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:directConnection>true</spirit:directConnection>
+  <spirit:isAddressable>false</spirit:isAddressable>
+  <spirit:maxMasters>1</spirit:maxMasters>
+  <spirit:maxSlaves>1</spirit:maxSlaves>
+  <spirit:description>Parallel video interface comprised of data, horizontal and vertical synchronization. The interface can carry RGB or YCrCb coded color in various depths (number of bits per pixel).</spirit:description>
+</spirit:busDefinition>

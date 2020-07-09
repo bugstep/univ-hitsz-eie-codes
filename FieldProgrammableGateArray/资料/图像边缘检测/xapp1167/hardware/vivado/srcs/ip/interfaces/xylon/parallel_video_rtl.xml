@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:abstractionDefinition xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xylon</spirit:vendor>
+  <spirit:library>logicbricks</spirit:library>
+  <spirit:name>parallel_video_rtl</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busType spirit:vendor="xylon" spirit:library="logicbricks" spirit:name="parallel_video" spirit:version="1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>vsync_o</spirit:logicalName>
+      <spirit:description>Vertical sync output</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>vsync_i</spirit:logicalName>
+      <spirit:description>Vertical sync input</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>vsync_t</spirit:logicalName>
+      <spirit:description>Vertical sync output enable/disable</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>hsync_o</spirit:logicalName>
+      <spirit:description>Horizontal sync output</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>hsync_i</spirit:logicalName>
+      <spirit:description>Horizontal sync input</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>hsync_t</spirit:logicalName>
+      <spirit:description>Horizontal sync output enable/disable</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>blank_o</spirit:logicalName>
+      <spirit:description>Blank period output</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>blank_i</spirit:logicalName>
+      <spirit:description>Blank period input</spirit:description>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>blank_t</spirit:logicalName>
+      <spirit:description>Blank period output enable/disable</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>d_pix_o</spirit:logicalName>
+      <spirit:description>Video data output</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>d_pix_i</spirit:logicalName>
+      <spirit:description>Video data input</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+        <spirit:onMaster>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>d_pix_t</spirit:logicalName>
+      <spirit:description>Video data output enable/disable</spirit:description>
+      <spirit:wire/>
+    </spirit:port>
+  </spirit:ports>
+</spirit:abstractionDefinition>

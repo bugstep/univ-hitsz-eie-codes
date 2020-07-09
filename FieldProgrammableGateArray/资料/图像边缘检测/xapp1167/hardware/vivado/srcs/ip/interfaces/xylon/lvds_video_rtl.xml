@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:abstractionDefinition xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xylon</spirit:vendor>
+  <spirit:library>logicbricks</spirit:library>
+  <spirit:name>lvds_video_rtl</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busType spirit:vendor="xylon" spirit:library="logicbricks" spirit:name="lvds_video" spirit:version="1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>lvds_clk_out_p</spirit:logicalName>
+      <spirit:description>LVDS video clock output p</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isClock>true</spirit:isClock>
+        </spirit:qualifier>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>lvds_clk_out_n</spirit:logicalName>
+      <spirit:description>LVDS video clock output n</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isClock>true</spirit:isClock>
+        </spirit:qualifier>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>lvds_data_out_p</spirit:logicalName>
+      <spirit:description>LVDS video data output p</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>lvds_data_out_n</spirit:logicalName>
+      <spirit:description>LVDS video data output n</spirit:description>
+      <spirit:wire>
+        <spirit:qualifier>
+          <spirit:isData>true</spirit:isData>
+        </spirit:qualifier>
+      </spirit:wire>
+    </spirit:port>
+  </spirit:ports>
+</spirit:abstractionDefinition>
