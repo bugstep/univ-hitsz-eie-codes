@@ -10,6 +10,7 @@ function fe = Jacobsen_F_Estimator(Sn,fs,N,se)
 % BLACKMAN  1.75  0.55
 % 对于参数se：矩形窗或无窗0，哈明窗2，汉宁窗3，布莱克曼窗4
 %% 
+Sn(1) = 0;
 [~,index] = sort(abs(Sn),'descend');
 switch(se)
     case 0

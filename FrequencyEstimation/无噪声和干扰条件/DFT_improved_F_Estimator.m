@@ -5,6 +5,7 @@ function fe = DFT_improved_F_Estimator(Sn,sig,fs,N)
 %   fs：采样频率
 %   N：采样点数
 %   theta:初相位
+Sn(1) = 0;
 [~,index] = sort(abs(Sn),'descend');
 %% Quinn 算法参数计算
 a1 = real(Sn(index(1)-1)/Sn(index(1)));
