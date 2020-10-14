@@ -1,0 +1,74 @@
+// CtsRts
+UintegerValue ctsThr = (enableCtsRts ? UintegerValue (100) : UintegerValue (2200));
+Config::SetDefault ("ns3::WifiRemoteStationManager::RtsCtsThreshold", ctsThr);
+
+// MobilityModel
+nodes.Get (?)->AggregateObject (CreateObject<ConstantPositionMobilityModel> ());
+
+
+// lossModel
+lossModel->SetDefaultLoss (200); 
+lossModel->SetLoss (nodes.Get (?)->GetObject<MobilityModel> (), nodes.Get (?)->GetObject<MobilityModel> (), 50);
+
+// wifiChannel
+Ptr<YansWifiChannel> wifiChannel = CreateObject <YansWifiChannel> ();
+wifiChannel->SetPropagationLossModel (lossModel);
+wifiChannel->SetPropagationDelayModel (CreateObject <ConstantSpeedPropagationDelayModel> ());
+YansWifiPhyHelper wifiPhy =  YansWifiPhyHelper::Default ();
+wifiPhy.SetChannel (wifiChannel);
+// wifiMac
+WifiMacHelper wifiMac;
+wifiMac.SetType ("ns3::AdhocWifiMac"); 
+// wifiPhy
+std::string wifiManager ("Arf");
+WifiHelper wifi;
+wifi.SetStandard (WIFI_PHY_STANDARD_80211b);
+wifi.SetRemoteStationManager ("ns3::" + wifiManager + "WifiManager");
+NetDeviceContainer devices = wifi.Install (wifiPhy, wifiMac, nodes);
+
+// Stack
+***
+// IP assign
+***
+
+// cbr
+ApplicationContainer cbrApps;
+OnOffHelper onOffHelper ("ns3::UdpSocketFactory", InetSocketAddress (Ipv4Address ("?.?.?.?"), cbrPort));
+onOffHelper.SetAttribute ("PacketSize", UintegerValue (1400));
+onOffHelper.SetAttribute ("OnTime",  StringValue ("ns3::ConstantRandomVariable[Constant=1]"));
+onOffHelper.SetAttribute ("OffTime", StringValue ("ns3::ConstantRandomVariable[Constant=0]"));
+
+onOffHelper.SetAttribute ("DataRate", StringValue ("3000000bps"));
+onOffHelper.SetAttribute ("StartTime", TimeValue (Seconds (1.000000)));
+cbrApps.Add (onOffHelper.Install (nodes.Get (0)));
+
+// echo Server
+***
+
+// echoClient
+***
+
+// FlowMonitor
+FlowMonitorHelper flowmon;
+Ptr<FlowMonitor> monitor = flowmon.InstallAll ();
+
+// run
+***
+
+// FlowStats
+monitor->CheckForLostPackets ();
+Ptr<Ipv4FlowClassifier> classifier = DynamicCast<Ipv4FlowClassifier> (flowmon.GetClassifier ());
+FlowMonitor::FlowStatsContainer stats = monitor->GetFlowStats ();
+for (std::map<FlowId, FlowMonitor::FlowStats>::const_iterator i = stats.begin (); i != stats.end (); ++i)
+{
+        Ipv4FlowClassifier::FiveTuple t = classifier->FindFlow (i->first);
+        std::cout << "Flow " << i->first << " (" << t.sourceAddress << " -> " << t.destinationAddress << ")\n";
+        std::cout << "  Tx Packets: " << i->second.txPackets << "\n";
+        std::cout << "  Tx Bytes:   " << i->second.txBytes << "\n";
+        std::cout << "  Rx Packets: " << i->second.rxPackets << "\n";
+        std::cout << "  Rx Bytes:   " << i->second.rxBytes << "\n";
+        std::cout << "  Throughput: " << i->second.rxBytes * 8.0 / 9.0 / 1000 / 1000  << " Mbps\n";
+}
+
+// Destroy
+***
