@@ -1,0 +1,12 @@
+Reading Layer Conversion File 
+Reading DXF file...
+done.
+Layer conversion file: C:/Workspace/Cadence/temperature_t/Frame_l.cnv
+DXF file: C:/Workspace/Cadence/temperature_t/Frame.dxf
+BRD file: C:/Workspace/Cadence/temperature_t/#Taaaaab00604.tmp
+Update existing design?: NO
+Use default text?: NO
+DXF units: MILLIMETERS
+Design units: MILS
+Design precision: 4
+dxf2a complete.

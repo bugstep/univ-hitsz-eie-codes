@@ -1,0 +1,279 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  0            pins ADDED TO this new net
+                                 C1.1           D2.1           D3.1           
+                                 D5.1           D6.2           J1.3           
+                                 LS1.1          R5.2           R10.1          
+                                 R16.1          U4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  +10V         pins ADDED TO this new net
+                                 J1.1           Q1.3           U1.8           
+                                 U2.7           U3.7           U5.7           
+                                 U6.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  -10V         pins ADDED TO this new net
+                                 J1.2           R8.1           U1.4           
+                                 U2.4           U3.4           U5.4           
+                                 U6.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  AC           pins ADDED TO this new net
+                                 J1.5           Q1.2           R15.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  BUZZER       pins ADDED TO this new net
+                                 J1.9           LS1.2          Q1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  DC           pins ADDED TO this new net
+                                 D4.1           J1.4           R9.2           
+                                 R19.2          U2.3           U6.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  LED          pins ADDED TO this new net
+                                 D6.1           J1.10          R19.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41488       pins ADDED TO this new net
+                                 C1.2           R1.2           U1.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41492       pins ADDED TO this new net
+                                 R6.1           R7.1           U1.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41506       pins ADDED TO this new net
+                                 D1.1           R1.1           R2.2           
+                                 R7.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41520       pins ADDED TO this new net
+                                 R2.1           U1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N41530       pins ADDED TO this new net
+                                 D1.2           D2.2           U1.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N41862       pins ADDED TO this new net
+                                 R18.2          U6.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N42178       pins ADDED TO this new net
+                                 D3.2           R12.2          R15.2          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N42252       pins ADDED TO this new net
+                                 R13.1          R17.2          U5.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N42450       pins ADDED TO this new net
+                                 R4.2           R11.1          U3.6           
+                                 U4.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N42584       pins ADDED TO this new net
+                                 R3.1           R8.2           U3.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N44906       pins ADDED TO this new net
+                                 D4.2           D5.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N50399       pins ADDED TO this new net
+                                 R16.2          U5.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N50887       pins ADDED TO this new net
+                                 R10.2          U3.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N58789       pins ADDED TO this new net
+                                 R5.1           R6.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N59014       pins ADDED TO this new net
+                                 R3.2           R4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N59102       pins ADDED TO this new net
+                                 R13.2          R14.1          
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N71287       pins ADDED TO this new net
+                                 R17.1          U4.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N421641      pins ADDED TO this new net
+                                 R12.1          U2.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  REF          pins ADDED TO this new net
+                                 J1.8           R9.1           R11.2          
+                                 U6.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SQUARE       pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 J1.7           U1.6           U1.7           
+                                 U2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  TEMP         pins ADDED TO this new net
+                                 J1.6           R14.2          R18.1          
+                                 U5.6           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ 1N4099_0_DO35-1_1N4099
+ 1N4617_0_DO35-1_1N4617
+ 1N5231/ON_0_DO35-1_1N5231/ON
+ 2N2222A_TO18_2N2222A
+ BUZZER_FMQ_BUZZER
+ C_0805_0.1U
+ D1N5819/ON_0_DO41-1_D1N5819/ON
+ HEADER 10_DIP_HEADER 10
+ LM2904/ON_SOIC8_LM2904/ON
+ LM741_1_SOIC8_LM741_1
+ LP_A676-TYP_FG_LP_A676-TYP
+ R_0805_56
+ R_0805_200
+ R_0805_330
+ R_0805_390
+ R_0805_1.8K
+ R_0805_100K
+ R_0805_10K
+ R_0805_130K
+ R_0805_2.4K
+ R_0805_20K
+ R_0805_30K
+ R_0805_33K
+ R_0805_4.7K
+ R_0805_56K
+ R_0805_9.1K
+ TMP20_0_SC70_TMP20
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  C_0805_0.1U           
+ D1                  D1N5819/ON_0_DO41-1_D1N5819/ON 
+ D2                  1N5231/ON_0_DO35-1_1N5231/ON 
+ D3                  1N4099_0_DO35-1_1N4099 
+ D4                  1N4617_0_DO35-1_1N4617 
+ D5                  1N4617_0_DO35-1_1N4617 
+ D6                  LP_A676-TYP_FG_LP_A676-TYP 
+ J1                  HEADER 10_DIP_HEADER 10 
+ LS1                 BUZZER_FMQ_BUZZER     
+ Q1                  2N2222A_TO18_2N2222A  
+ R1                  R_0805_4.7K           
+ R2                  R_0805_330            
+ R3                  R_0805_33K            
+ R4                  R_0805_2.4K           
+ R5                  R_0805_130K           
+ R6                  R_0805_9.1K           
+ R7                  R_0805_100K           
+ R8                  R_0805_100K           
+ R9                  R_0805_56K            
+ R10                 R_0805_100K           
+ R11                 R_0805_390            
+ R12                 R_0805_1.8K           
+ R13                 R_0805_30K            
+ R14                 R_0805_200            
+ R15                 R_0805_1.8K           
+ R16                 R_0805_100K           
+ R17                 R_0805_20K            
+ R18                 R_0805_10K            
+ R19                 R_0805_56             
+ U1                  LM2904/ON_SOIC8_LM2904/ON 
+ U2                  LM741_1_SOIC8_LM741_1 
+ U3                  LM741_1_SOIC8_LM741_1 
+ U4                  TMP20_0_SC70_TMP20    
+ U5                  LM741_1_SOIC8_LM741_1 
+ U6                  LM741_1_SOIC8_LM741_1 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ D1.2                           PRIM_FILE      .\pstchip.dat
+ D2.2                           PRIM_FILE      .\pstchip.dat
+ D3.2                           PRIM_FILE      .\pstchip.dat
+ D4.2                           PRIM_FILE      .\pstchip.dat
+ D5.2                           PRIM_FILE      .\pstchip.dat
+ D6.2                           PRIM_FILE      .\pstchip.dat
+ J1.9                           PRIM_FILE      .\pstchip.dat
+ LS1.2                          PRIM_FILE      .\pstchip.dat
+ Q1.1                           PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R3.2                           PRIM_FILE      .\pstchip.dat
+ R4.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ R8.2                           PRIM_FILE      .\pstchip.dat
+ R9.2                           PRIM_FILE      .\pstchip.dat
+ R10.2                          PRIM_FILE      .\pstchip.dat
+ R11.2                          PRIM_FILE      .\pstchip.dat
+ R12.2                          PRIM_FILE      .\pstchip.dat
+ R13.2                          PRIM_FILE      .\pstchip.dat
+ R14.2                          PRIM_FILE      .\pstchip.dat
+ R15.2                          PRIM_FILE      .\pstchip.dat
+ R16.2                          PRIM_FILE      .\pstchip.dat
+ R17.2                          PRIM_FILE      .\pstchip.dat
+ R18.2                          PRIM_FILE      .\pstchip.dat
+ R19.2                          PRIM_FILE      .\pstchip.dat
+ U1.3                           PRIM_FILE      .\pstchip.dat
+ U1.5                           PRIM_FILE      .\pstchip.dat
+ U2.4                           PRIM_FILE      .\pstchip.dat
+ U3.4                           PRIM_FILE      .\pstchip.dat
+ U4.2                           PRIM_FILE      .\pstchip.dat
+ U5.4                           PRIM_FILE      .\pstchip.dat
+ U6.4                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t/temperature.brd                          |
+|                                                    Thu Jul 04 11:44:49 2019  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :      98                                        |
+|       Comp definitions added:      27                                        |
+|       Components added      :      35                                        |
+|       Slot property added   :      36                                        |
+|                                                                              |
+|   Total ECO changes reported:     196                                        |
+|------------------------------------------------------------------------------|

@@ -1,0 +1,24 @@
+\t (00:00:05) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:05)     Journal start - Mon May 07 07:28:37 2018
+\t (00:00:05)         Host=DESKTOP-7NL7HDV User=Lenovo Pid=12920 CPUs=4
+\t (00:00:05) 
+\t (00:00:07) Opening existing design...
+\d (00:00:07) Database opened: C:/Users/Lenovo/Desktop/PCB/FZ/tep.dra
+\i (00:00:07) trapsize 554
+\i (00:00:07) trapsize 538
+\i (00:00:07) trapsize 556
+\i (00:00:07) trapsize 538
+\i (00:00:07) trapsize 538
+\i (00:00:08) etchedit 
+\i (00:00:23) open 
+\i (00:00:35) fillin "menu_cancel"
+\i (00:00:35) etchedit 
+\i (00:00:39) open 
+\i (00:00:55) fillin "C:\Users\Lenovo\Desktop\PCB3\HIT-Demo_PCB\HIT-Demo.brd"
+\i (00:00:55) cd "C:\Users\Lenovo\Desktop\PCB3\HIT-Demo_PCB"
+\t (00:00:55) Opening existing design...
+\i (00:00:55) trapsize 21145
+\i (00:00:55) trapsize 21850
+\i (00:00:55) trapsize 26991
+\i (00:00:55) trapsize 32791
+\t (00:00:55)     Journal end - Mon May 07 07:29:27 2018

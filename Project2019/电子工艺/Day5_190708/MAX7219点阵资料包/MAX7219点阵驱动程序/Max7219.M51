@@ -1,0 +1,198 @@
+BL51 BANKED LINKER/LOCATER V5.12                                                        08/30/2012  11:23:50  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.12, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, main.obj TO Max7219 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  main.obj (MAIN)
+
+
+LINK MAP OF MODULE:  Max7219 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0130H     UNIT         ?CO?MAIN
+            CODE    0133H     0039H     UNIT         ?PR?MAIN?MAIN
+            CODE    016CH     0022H     UNIT         ?PR?INIT_MAX7219?MAIN
+            CODE    018EH     0020H     UNIT         ?PR?_DELAY_XMS?MAIN
+            CODE    01AEH     0013H     UNIT         ?PR?_WRITE_MAX7219_BYTE?MAIN
+            CODE    01C1H     000DH     UNIT         ?PR?_WRITE_MAX7219?MAIN
+            CODE    01CEH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   Max7219 (?C_STARTUP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?INIT_MAX7219?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_WRITE_MAX7219?MAIN
+  +--> ?PR?_DELAY_XMS?MAIN
+
+?PR?INIT_MAX7219?MAIN
+  +--> ?PR?_WRITE_MAX7219?MAIN
+
+?PR?_WRITE_MAX7219?MAIN
+  +--> ?PR?_WRITE_MAX7219_BYTE?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  Max7219 (?C_STARTUP)
+BL51 BANKED LINKER/LOCATER V5.12                                                      08/30/2012  11:23:50  PAGE 2
+
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:01CEH         SEGMENT       ?C_C51STARTUP
+  I:0008H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:01D1H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0000H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:01CEH         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         92
+  C:01CEH         LINE#         99
+  C:01D0H         LINE#         100
+  C:01D1H         LINE#         101
+  C:01D2H         LINE#         102
+  C:01D4H         LINE#         151
+  C:01D7H         LINE#         155
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.2       PUBLIC        Max7219_pinCLK
+  D:0090H         PUBLIC        P1
+  B:00A0H.0       PUBLIC        Max7219_pinDIN
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:018EH         PUBLIC        _Delay_xms
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0133H         PUBLIC        main
+  C:016CH         PUBLIC        Init_MAX7219
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:00A0H.1       PUBLIC        Max7219_pinCS
+  C:01C1H         PUBLIC        _Write_Max7219
+  C:01AEH         PUBLIC        _Write_Max7219_byte
+  C:0003H         PUBLIC        disp1
+  D:00C8H         PUBLIC        T2CON
+BL51 BANKED LINKER/LOCATER V5.12                                                      08/30/2012  11:23:50  PAGE 3
+
+
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY_XMS
+  D:0006H         SYMBOL        x
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:018EH         LINE#         49
+  C:018EH         LINE#         50
+  C:018EH         LINE#         52
+  C:0198H         LINE#         53
+  C:01ADH         LINE#         54
+  -------         ENDPROC       _DELAY_XMS
+  -------         PROC          _WRITE_MAX7219_BYTE
+  D:0007H         SYMBOL        DATA
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:01AEH         LINE#         60
+  C:01AEH         LINE#         61
+  C:01AEH         LINE#         63
+  C:01B0H         LINE#         64
+  C:01B2H         LINE#         65
+  C:01B2H         LINE#         66
+  C:01B4H         LINE#         67
+  C:01B8H         LINE#         68
+  C:01BCH         LINE#         69
+  C:01BEH         LINE#         70
+  C:01C0H         LINE#         71
+  -------         ENDPROC       _WRITE_MAX7219_BYTE
+  -------         PROC          _WRITE_MAX7219
+  D:0007H         SYMBOL        address
+  D:0005H         SYMBOL        dat
+  C:01C1H         LINE#         77
+  C:01C1H         LINE#         78
+  C:01C1H         LINE#         79
+  C:01C3H         LINE#         80
+  C:01C6H         LINE#         81
+  C:01CBH         LINE#         82
+  C:01CDH         LINE#         83
+  -------         ENDPROC       _WRITE_MAX7219
+  -------         PROC          INIT_MAX7219
+  C:016CH         LINE#         85
+  C:016CH         LINE#         86
+  C:016CH         LINE#         87
+  C:0173H         LINE#         88
+  C:017AH         LINE#         89
+  C:0181H         LINE#         90
+  C:0188H         LINE#         91
+  -------         ENDPROC       INIT_MAX7219
+  -------         PROC          MAIN
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0001H         SYMBOL        j
+  -------         ENDDO         
+  C:0133H         LINE#         93
+  C:0133H         LINE#         94
+BL51 BANKED LINKER/LOCATER V5.12                                                      08/30/2012  11:23:50  PAGE 4
+
+
+  C:0133H         LINE#         97
+  C:0136H         LINE#         104
+  C:0136H         LINE#         105
+  C:0136H         LINE#         106
+  C:0138H         LINE#         107
+  C:0138H         LINE#         108
+  C:013AH         LINE#         109
+  C:015FH         LINE#         110
+  C:0166H         LINE#         111
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+Program Size: data=9.0 xdata=0 code=474
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

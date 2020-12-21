@@ -1,0 +1,187 @@
+C51 COMPILER V9.00   MAIN                                                                  08/26/2014 15:05:12 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          //单片机晶振12M
+   2          //显示0-9中国
+   3          #include <reg52.h>
+   4          #include <intrins.h>
+   5          #define uchar unsigned char
+   6          #define uint  unsigned int
+   7          
+   8          #define count 16           //级联个数
+   9          //定义Max7219端口
+  10          sbit Max7219_pinCLK = P2^2;
+  11          sbit Max7219_pinCS  = P2^1;
+  12          sbit Max7219_pinDIN = P2^0;
+  13          uchar code disp1[16][8]=
+  14          {     
+  15           {0xfe,0x0c,0x10,0xff,0x10,0x10,0x10,0x30},//4             子
+  16           {0x10,0xfe,0x92,0xfe,0x92,0xfe,0x91,0x1e},//3           电  
+  17           {0x52,0x52,0x52,0x52,0x52,0x52,0x92,0x82},//2 川
+  18            {0x10,0xfe,0x10,0x7e,0x10,0xff,0x10,0x10},//丰
+  19          
+  20             {0xfe,0x0c,0x10,0xff,0x10,0x10,0x10,0x30},//4                   子
+  21           {0x10,0xfe,0x92,0xfe,0x92,0xfe,0x91,0x1e},//3           电  
+  22           {0x52,0x52,0x52,0x52,0x52,0x52,0x92,0x82},//2 川
+  23            {0x10,0xfe,0x10,0x7e,0x10,0xff,0x10,0x10},//丰
+  24          
+  25            {0xfe,0x0c,0x10,0xff,0x10,0x10,0x10,0x30},//4            子
+  26           {0x10,0xfe,0x92,0xfe,0x92,0xfe,0x91,0x1e},//3           电  
+  27           {0x52,0x52,0x52,0x52,0x52,0x52,0x92,0x82},//2 川
+  28            {0x10,0xfe,0x10,0x7e,0x10,0xff,0x10,0x10},//丰
+  29          
+  30            {0xfe,0x0c,0x10,0xff,0x10,0x10,0x10,0x30},//4            子
+  31           {0x10,0xfe,0x92,0xfe,0x92,0xfe,0x91,0x1e},//3           电  
+  32           {0x52,0x52,0x52,0x52,0x52,0x52,0x92,0x82},//2 川
+  33            {0x10,0xfe,0x10,0x7e,0x10,0xff,0x10,0x10},//丰
+  34          
+  35          
+  36          // {0x08,0xff,0xb2,0xd4,0x4c,0xec,0xba,0x331},//5          欢
+  37           //{0xbe,0x3a6,0x26,0xe6,0x76,0x76,0xc4,0xbf},//6        迎
+  38           //{0x0,0x3E,0x22,0x4, 0x8, 0x8, 0x8, 0x8},//7     您
+  39           //{0x0,0x60,0x40,0x40,0x0,0x40,0x60,0x0},//8            ！
+  40          };
+  41          void Delay_xms(uint x);
+  42          void Write_Max7219_byte(uchar DATA);//写入一字节
+  43          void Write_Max7219(uchar address1,uchar dat1,uchar address2,uchar dat2);
+  44          void Init_MAX7219(void);
+  45                                // 锁存进相应寄存器
+  46          
+  47          
+  48          void main(void)
+  49          {
+  50   1       uchar i,j;
+  51   1       Delay_xms(50);
+  52   1       Init_MAX7219();  
+  53   1       while(1)
+  54   1       {
+  55   2        // for(i=1;i<9;i++)
+C51 COMPILER V9.00   MAIN                                                                  08/26/2014 15:05:12 PAGE 2   
+
+  56   2       //   Write_Max7219(i,disp1[1][i-1],i,disp1[0][i-1]);
+  57   2      
+  58   2         for(i=1;i<9;i++)
+  59   2         {
+  60   3         
+  61   3       //  Write_Max7219(i,disp1[1][i-1],i,disp1[0][i-1]);
+  62   3      
+  63   3          Max7219_pinCS=0;
+  64   3          for(j=0;j<count;j++)
+  65   3          {
+  66   4              Write_Max7219_byte(i);           //写入地址，即数码管编号
+  67   4              Write_Max7219_byte(disp1[count-1-j][i-1]);              //写入数据，即数码管显示数字 
+  68   4                    _nop_();
+  69   4           }
+  70   3           Max7219_pinCS=1;    
+  71   3       
+  72   3         }
+  73   2         Delay_xms(1000);
+  74   2        
+  75   2       } 
+  76   1      }
+  77          void Init_MAX7219(void)
+  78          { 
+  79   1      /*   Write_Max7219(0x09, 0x00,0x09, 0x00);       //译码方式：BCD码
+  80   1        Write_Max7219(0x0a, 0x03,0x0a, 0x03);       //亮度 
+  81   1        Write_Max7219(0x0b, 0x07,0x0b, 0x07);       //扫描界限；8个数码管显示
+  82   1        Write_Max7219(0x0c, 0x01,0x0c, 0x01);       //掉电模式：0，普通模式：1
+  83   1        Write_Max7219(0x0f, 0x00,0x0f, 0x00);       //显示测试：1；测试结束，正常显示：0
+  84   1        */
+  85   1      uchar  i;
+  86   1        Max7219_pinCS=0;
+  87   1        for(i=0;i<count;i++)
+  88   1        {
+  89   2          Write_Max7219_byte(0x09); //译码方式：BCD码       
+  90   2          Write_Max7219_byte(0x00);    
+  91   2        }
+  92   1        Max7219_pinCS=1;
+  93   1        _nop_();
+  94   1        Max7219_pinCS=0;
+  95   1        for(i=0;i<count;i++)
+  96   1        {
+  97   2          Write_Max7219_byte(0x0a); //亮度    
+  98   2          Write_Max7219_byte(0x03);    
+  99   2        }
+ 100   1        Max7219_pinCS=1;
+ 101   1       _nop_();
+ 102   1         Max7219_pinCS=0;
+ 103   1        for(i=0;i<count;i++)
+ 104   1        {
+ 105   2          Write_Max7219_byte(0x0b); // //扫描界限；8个数码管显示  
+ 106   2          Write_Max7219_byte(0x07);    
+ 107   2        }
+ 108   1        Max7219_pinCS=1;
+ 109   1        _nop_();
+ 110   1        Max7219_pinCS=0;
+ 111   1        for(i=0;i<count;i++)
+ 112   1        {
+ 113   2          Write_Max7219_byte(0x0c); //   //掉电模式：0，普通模式：1
+ 114   2          Write_Max7219_byte(0x01);    
+ 115   2        }
+ 116   1        Max7219_pinCS=1;
+ 117   1        Max7219_pinCS=0;
+C51 COMPILER V9.00   MAIN                                                                  08/26/2014 15:05:12 PAGE 3   
+
+ 118   1        for(i=0;i<count;i++)
+ 119   1        {
+ 120   2          Write_Max7219_byte(0x0f); //显示测试：1；测试结束，正常显示：0
+ 121   2          Write_Max7219_byte(0x00);    
+ 122   2        }
+ 123   1        Max7219_pinCS=1;
+ 124   1        _nop_();
+ 125   1      }
+ 126          void Write_Max7219(uchar address1,uchar dat1,uchar address2,uchar dat2)
+ 127          { 
+ 128   1           uchar i;
+ 129   1           Max7219_pinCS=0;
+ 130   1           Write_Max7219_byte(address1);           //写入地址，即数码管编号
+ 131   1           Write_Max7219_byte(dat1);              //写入数据，即数码管显示数字 
+ 132   1           Write_Max7219_byte(address2);           //写入地址，即数码管编号
+ 133   1           Write_Max7219_byte(dat2);      //写入数据，即数码管显示数字 
+ 134   1                    _nop_();
+ 135   1           
+ 136   1           Max7219_pinCS=1;                        
+ 137   1      }
+*** WARNING C280 IN LINE 128 OF MAIN.C: 'i': unreferenced local variable
+ 138          //--------------------------------------------
+ 139          //功能：向MAX7219(U3)写入字节
+ 140          //入口参数：DATA 
+ 141          //出口参数：无
+ 142          //说明：
+ 143          void Write_Max7219_byte(uchar DATA)         
+ 144          {
+ 145   1              uchar i;    
+ 146   1                  for(i=8;i>=1;i--)
+ 147   1                {               
+ 148   2                  Max7219_pinCLK=0;
+ 149   2                  Max7219_pinDIN=DATA&0x80;
+ 150   2                  DATA=DATA<<1;
+ 151   2                  Max7219_pinCLK=1;
+ 152   2                 }                                 
+ 153   1      }
+ 154          void Delay_xms(uint x)
+ 155          {
+ 156   1       uint i,j;
+ 157   1       for(i=0;i<x;i++)
+ 158   1        for(j=0;j<112;j++);
+ 159   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    300    ----
+   CONSTANT SIZE    =    128    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       8
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

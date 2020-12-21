@@ -1,0 +1,80 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sun May 06 11:07:24 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: C:/Users/Lenovo/Desktop/PCB3/HIT-Demo_PCB/HIT-Demo.brd ***
+
+
+
+  *** Creating padstacks. ***
+
+  THC1D00C1D50MM being dumped.
+
+  THC1D00S1D50MM being dumped.
+
+  SMD50_25 being dumped.
+
+  ID-BOARD being dumped.
+
+  FMQ being dumped.
+
+  PAD60SQ36D being dumped.
+
+  PAD55SQ25D being dumped.
+
+  60X50 being dumped.
+
+  PAD50CIR32D being dumped.
+
+  PAD60CIR36D being dumped.
+
+  PAD55CIR25D being dumped.
+
+  PAD65CIR42D being dumped.
+
+
+  *** Creating package symbols (.dra and .psm) ***
+
+  capck05 being dumped.
+
+  dip20_6 being dumped.
+
+  jumper3 being dumped.
+
+  fg being dumped.
+
+  0805 being dumped.
+
+  id-boarda being dumped.
+
+  sw2 being dumped.
+
+  fmq being dumped.
+
+  to39 being dumped.
+
+  do41-1 being dumped.
+
+  do35-1 being dumped.
+
+  soic8 being dumped.
+
+  cap196 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:               12
+Number of package symbols dumped:         13
+
+Total number of symbols dumped:           13
+*****************************************************
+

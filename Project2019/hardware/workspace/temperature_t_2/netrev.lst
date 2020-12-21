@@ -1,0 +1,92 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : temperature.brd                               )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Thu Jul 04 11:44:49 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  Yes
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'C:/Workspace/Cadence/temperature_t/allegro'
+Design Directory:            'C:/Workspace/Cadence/temperature_t'
+Old design name:             'C:/Workspace/Cadence/temperature_t/temperature.brd'
+New design name:             'C:/Workspace/Cadence/temperature_t/temperature.brd'
+
+CmdLine: netrev -$ -i C:/Workspace/Cadence/temperature_t/allegro -x -y 1 -z -q netrev_constraint_report.xml C:/Workspace/Cadence/temperature_t/#Taaaaad06952.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read C:/Workspace/Cadence/temperature_t/allegro/pstchip.dat 
+   Finished reading C:/Workspace/Cadence/temperature_t/allegro/pstchip.dat (00:00:00.07)
+Starting to read C:/Workspace/Cadence/temperature_t/allegro/pstxprt.dat 
+   Finished reading C:/Workspace/Cadence/temperature_t/allegro/pstxprt.dat (00:00:00.00)
+Starting to read C:/Workspace/Cadence/temperature_t/allegro/pstxnet.dat 
+   Finished reading C:/Workspace/Cadence/temperature_t/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Jul 4 11:44:49 2019
+   DESIGN NAME : 'TEMPERATURE'
+   PACKAGING ON Feb 15 2016 19:53:59
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:02:01
+elapsed time  0:00:01
+

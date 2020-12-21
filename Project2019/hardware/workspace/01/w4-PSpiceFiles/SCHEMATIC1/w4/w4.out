@@ -1,0 +1,235 @@
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source W4
+D_D8         N07872 N07898 D1N5819/ON 
+R_R15         N07856 N07872  5k TC=0,0 
+X_U12A         N07822 N07814 +VCC -VCC N07856 LM2904/ON
+C_C4         0 N07814  .1u  TC=0,0 
+X_U13B         N07898 VOUT4 +VCC -VCC VOUT4 LM2904/ON
+R_R13         0 N07822  139k TC=0,0 
+X_D9         0 N07898 1n5231/ON
+R_R16         N07814 N07872  4.7k TC=0,0 
+R_R14         N07822 N07872  100k TC=0,0 
+V_V2         -VCC 0 -7.5Vdc
+V_V1         +VCC 0 7.5Vdc
+
+**** RESUMING w4.cir ****
+.END
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5819/ON      X_U12A.dx       X_U13B.dx       X_D9.MD1        
+  T_Measured                                                   27            
+   T_Current                                                   25            
+          IS   11.927900E-06  800.000000E-18  800.000000E-18    3.540710E-15 
+           N    1.16517                                         1.05719      
+          BV   40                                                            
+         IBV    1.000000E-03                                                 
+          RS     .062542                                         .62         
+          TT   26.273000E-09                                   10.000000E-09 
+         CJO  150.114000E-12                                  170.000000E-12 
+          VJ    1.5                                                          
+           M     .590203                                                     
+          EG    1.3                                                          
+         XTI    3.22098                                         1            
+
+
+               X_D9.MD3        X_D9.MD2        
+  T_Measured   27              27            
+   T_Current   25              25            
+          IS    2.500000E-12    2.500000E-12 
+           N     .173176         .274509     
+          EG     .1              .1          
+         XTI    0               0            
+
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U12A.qx       X_U13B.qx       
+               PNP             PNP             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   32.03           32.03         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D9.MDR        X_D9.MDRBV      
+           R    1               1            
+         TC1                  284.722000E-06 
+
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( +VCC)    7.5000  ( -VCC)   -7.5000  (VOUT4)     .0050  (N07814)     .0051     
+
+(N07822)     .0051 (N07856)     .0045 (N07872)     .0049 (N07898)     .0050     
+
+(X_D9.3)-11.48E-12 (X_D9.4)    -.1100 (X_D9.5)   -5.0104 (X_D9.6)    5.0154     
+
+(X_U12A.6)-471.4E-09                  (X_U12A.7)     .0045                      
+
+(X_U12A.8)     .0045                  (X_U12A.9)    0.0000                      
+
+(X_U13B.6)-508.0E-09                  (X_U13B.7)     .0050                      
+
+(X_U13B.8)     .0050                  (X_U13B.9)    0.0000                      
+
+(X_U12A.10)     .5560                 (X_U12A.11)   -7.4704                     
+
+(X_U12A.12)   -7.4704                 (X_U12A.13)     .5522                     
+
+(X_U12A.14)     .5522                 (X_U12A.53)    5.7000                     
+
+(X_U12A.54)   -6.6200                 (X_U12A.90)-72.43E-06                     
+
+(X_U12A.91)   40.0000                 (X_U12A.92)  -40.0000                     
+
+(X_U12A.99)    0.0000                 (X_U13B.10)     .5559                     
+
+(X_U13B.11)   -7.4704                 (X_U13B.12)   -7.4704                     
+
+(X_U13B.13)     .5521                 (X_U13B.14)     .5521                     
+
+(X_U13B.53)    5.7000                 (X_U13B.54)   -6.6200                     
+
+(X_U13B.90)-38.39E-06                 (X_U13B.91)   40.0000                     
+
+(X_U13B.92)  -40.0000                 (X_U13B.99)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         8.024E-04
+    V_V1        -8.025E-04
+    X_U12A.vb   -4.714E-12
+    X_U12A.vc    5.696E-12
+    X_U12A.ve    6.625E-12
+    X_U12A.vlim  -7.243E-08
+    X_U12A.vlp  -4.000E-11
+    X_U12A.vln  -4.000E-11
+    X_U13B.vb   -5.080E-12
+    X_U13B.vc    5.696E-12
+    X_U13B.ve    6.626E-12
+    X_U13B.vlim  -3.839E-08
+    X_U13B.vlp  -4.000E-11
+    X_U13B.vln  -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.20E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/30/19 18:06:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w4"  [ c:\workspace\cadence\01\w4-pspicefiles\schematic1\w4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .58
+  Total job time (using Solver 1)   =        2.05
+

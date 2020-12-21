@@ -1,0 +1,70 @@
+
+**** 06/27/19 09:39:43 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-waveform"  [ C:\Workspace\Cadence\01\waveform-PSpiceFiles\SCHEMATIC1\waveform.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "waveform.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source WAVEFORM
+R_R1         N00363 N00356  139k TC=0,0 
+R_R2         N00356 N00402  100k TC=0,0 
+R_R3         N00389 N00402  330 TC=0,0 
+R_R4         N00349 N00402  4.7k TC=0,0 
+C_C1         N00363 N00349  0.1u  TC=0,0 
+V_V1         N00623 N00611 7.5Vdc
+V_V2         N00619 N00615 -7.5Vdc
+X_U1A         N00356 N00349 N00607 N00595 N00389 LM2904/ON
+X_U1B         N00533 N00554 N00603 N00599 N00554 LM2904/ON
+D_D1         N00402 N00533 D1N5819/ON 
+X_D2         N00589 N00533 1n5231/ON
+
+**** RESUMING waveform.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nom.ind for library file nom.lib.
+
+INFO(ORPSIM-15422): Making new index file nom.ind for library file nom.lib.
+
+Index has 33614 entries from 203 file(s).
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00623.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00611.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00619.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00615.
+
+ERROR(ORPSIM-15142): Node N00623 is floating
+
+ERROR(ORPSIM-15142): Node N00611 is floating
+
+ERROR(ORPSIM-15142): Node N00619 is floating
+
+ERROR(ORPSIM-15142): Node N00615 is floating
+

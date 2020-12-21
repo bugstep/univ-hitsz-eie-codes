@@ -1,0 +1,126 @@
+(ExpressProject "waveform"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\waveform.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\waveform-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\waveform-pspicefiles\schematic1\waveform.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\waveform-pspicefiles\schematic1\waveform.sim"
+        (DisplayName "SCHEMATIC1-waveform")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "isaac")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Workspace\Cadence\01\waveform.dsn")
+      (Path "Design Resources" "C:\Workspace\Cadence\01\waveform.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "C:\Workspace\Cadence\01\waveform.dsn"
+         "Design Cache")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 417"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
+        (Scroll "0 222")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\01\WAVEFORM.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (PartMRUSelector
+    (TL082/301/TI
+      (FullPartName "TL082/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
+    (TL071/301/TI
+      (FullPartName "TL071/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\EDIODE.OLB")
+      (DeviceIndex "0"))
+    (TL072/301/TI
+      (FullPartName "TL072/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
+    (LM7171AIM
+      (FullPartName "LM7171AIM.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (LMH6642/NS
+      (FullPartName "LMH6642/NS.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\NAT_SEMI.OLB")
+      (DeviceIndex "0"))
+    (TLE2142/301/TI
+      (FullPartName "TLE2142/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
+    (0
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (1n5231/ON
+      (FullPartName "1n5231/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_DIODE.OLB")
+      (DeviceIndex "0"))
+    (D1N5819/ON
+      (FullPartName "D1N5819/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_DIODE.OLB")
+      (DeviceIndex "0"))
+    (LM2904/ON
+      (FullPartName "LM2904/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_AMP.OLB")
+      (DeviceIndex "1"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\Cadence_SPB_16.6\tools\capture\library\pspice"))

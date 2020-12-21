@@ -1,0 +1,702 @@
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "t.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tmp20.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source T
+X_U1         N00356 N00360 +10V -10V N00585 LM741
+X_U2         N00585 DIRECT +10V -10V DIRECT LM741
+D_D1         N00585 N009551 D1N4617 
+D_D2         0 N009551 D1N4617 
+R_R3         N04022 N03994  1.25k TC=0,0 
+X_D6         0 N04048 1n5231/ON
+R_R5         N03998 N04022  100k TC=0,0 
+C_C1         0 N03994  0.1u  TC=0,0 
+R_R4         N03998 0  139k TC=0,0 
+R_R6         N04034 N04022  330 TC=0,0 
+X_U5B         N04048 SQUARE +10V -10V SQUARE LM2904/ON
+D_D5         N04022 N04048 D1N5819/ON 
+X_U5A         N03998 N03994 +10V -10V N04034 LM2904/ON
+X_U6         DIRECT SQUARE +10V -10V N08387 LM741
+R_R7         N08387 ALTERNATING  1k TC=0,0 
+V_V7         +10V 0 10Vdc
+V_V6         -10V 0 -10Vdc
+R_R10         TESTWAVE N00360  10k TC=0,0 
+R_R11         REFERENCE N00356  100k TC=0,0 
+R_R12         0 N16156  16 TC=0,0 
+X_Q1         +10V ALTERNATING N16156 awb2n2222a PARAMS:                        
++                     
+X_D7         0 ALTERNATING awb1n4621 PARAMS:               
+X_Q2         +10V DIRECT N173240 awb2n2222a PARAMS:                            
++                 
+R_R13         N18335 N173240  13.3 TC=0,0 
+D_D9         N18335 0 LP_M675-TYP 
+X_U7         0 TMP20 REFERENCE T TMP20 
+V_V10         T 0  AC 0
++SIN 40 10 .001 0 0 0
+V_V12         TESTWAVE 0  AC 0
++SIN 3.5 0.3 100 0 0 0
+R_R19         N28783 TEMPERATURE  30.2k TC=0,0 
+R_R18         0 N28783  20k TC=0,0 
+X_U9         N28777 N28783 +10V -10V TEMPERATURE LM741
+R_R20         TMP20 N28777  100k TC=0,0 
+X_U10         N29557 N29563 +10V -10V REFERENCE LM741
+R_R22         N29563 REFERENCE  35k TC=0,0 
+R_R21         -10V N29563  100k TC=0,0 
+R_R23         0 N29557  100k TC=0,0 
+
+**** RESUMING t.cir ****
+.END
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4617         D1N5819/ON      LP_M675-TYP     X_D6.MD1        
+  T_Measured                                                   27            
+   T_Current                                                   25            
+          IS   77.530000E-18   11.927900E-06   10.000000E-21    3.540710E-15 
+           N    1.196           1.16517         1.8194          1.05719      
+         ISR    1.272400E-06                                                 
+          NR    2.1594                                                       
+          BV    2.5491         40                                            
+         IBV     .079582        1.000000E-03                                 
+          RS     .01358          .062542        1.2765           .62         
+          TT   94.600000E-09   26.273000E-09                   10.000000E-09 
+         CJO  170.000000E-12  150.114000E-12                  170.000000E-12 
+          VJ     .75            1.5                                          
+           M     .53348          .590203                                     
+          EG                    1.3                                          
+         XTI                    3.22098                         1            
+
+
+               X_D6.MD3        X_D6.MD2        X_U5B.dx        X_U5A.dx        
+  T_Measured   27              27                                            
+   T_Current   25              25                                            
+          IS    2.500000E-12    2.500000E-12  800.000000E-18  800.000000E-18 
+           N     .173176         .274509                                     
+          EG     .1              .1                                          
+         XTI    0               0                                            
+
+
+               X_U7.DL         X_U7.DVN        X_U7.DIN        X_U7.DD         
+          IS    9.500000E-12  100.000000E-18   10.000000E-15   10.000000E-15 
+           N    1.63                                                         
+         XTI    1.5                                                          
+          KF                   70.000000E-15                                 
+
+
+               X_U7.DE         X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx 
+          IS   30.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1               1.000000E-03    1            
+         CJO                                   10.000000E-12                 
+
+
+               X_U2.x_lm741.dy X_U6.x_lm741.dx X_U6.x_lm741.dy X_U9.x_lm741.dx 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U9.x_lm741.dy X_U10.x_lm741.dx 
+          IS  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1            
+         CJO   10.000000E-12                 
+
+
+               X_U10.x_lm741.dy 
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U5B.qx        X_U5A.qx        X_Q1.model4     X_Q2.model4     
+               PNP             PNP             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  166.780000E-15  166.780000E-15 
+          BF   32.03           32.03          150             150            
+          NF    1               1               1.074           1.074        
+         VAF                                   78              78            
+         IKF                                     .5              .5          
+         ISE                                    3.920000E-12    3.920000E-12 
+          NE                                    1.776           1.776        
+          BR    1               1               2.394           2.394        
+          NR    1               1               1.074           1.074        
+         VAR                                  500             500            
+          NC                                    1               1            
+         ISS    0               0               0               0            
+          RB                                     .676            .676        
+         RBM                                     .676            .676        
+          RE    0               0                .1              .1          
+          RC    0               0                .654            .654        
+         CJE    0               0              22.250000E-12   22.250000E-12 
+         VJE     .75             .75            1.333           1.333        
+         MJE                                     .522            .522        
+         CJC    0               0               8.370000E-12    8.370000E-12 
+         VJC     .75             .75            1.333           1.333        
+         MJC     .33             .33             .518            .518        
+        XCJC    1               1                .5              .5          
+         CJS    0               0               0               0            
+         VJS     .75             .75             .7              .7          
+         MJS                                     .5              .5          
+          TF                                  454.400000E-12  454.400000E-12 
+         XTF                                   13.24           13.24         
+         VTF                                    4.83            4.83         
+         ITF                                     .2163           .2163       
+          TR                                  117.500000E-09  117.500000E-09 
+         XTB                                    2.34            2.34         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.2             2.42            2.42         
+           D     .52             .52             .87             .87         
+
+
+               X_U7.QPL        X_U7.QNL        X_U1.x_lm741.qx X_U2.x_lm741.qx 
+               PNP             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  800.000000E-18  800.000000E-18 
+          BF  100             100              93.75           93.75         
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.42            2.42         
+           D     .52             .87             .87             .87         
+
+
+               X_U6.x_lm741.qx X_U9.x_lm741.qx 
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+               X_U10.x_lm741.qx 
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.JC         
+               NJF             
+         VTO   -2            
+        BETA  100.000000E-06 
+          IS    1.000000E-18 
+
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.PSD        X_U7.POUT       X_U7.NOUT       X_U7.PIN        
+               PMOS            PMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    -.5             -.7              .7             -.35         
+          KP  200.000000E-06  200.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS    1.000000E-18   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U7.NIN        X_U7.PINT       
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .35            -.35         
+          KP  200.000000E-06  200.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0                .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D6.MDR        X_D6.MDRBV      
+           R    1               1            
+         TC1                  284.722000E-06 
+
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    T)   40.0000  ( +10V)   10.0000  ( -10V)  -10.0000  (TMP20)    1.3991      
+
+(DIRECT)   -3.1640 (N00356)    3.4853 (N00360)    3.4991 (N00585)   -3.1642     
+
+(N03994)     .0053 (N03998)     .0053 (N04022)     .0052 (N04034)     .0052     
+
+(N04048)     .0053 (N08387)   -9.8098 (N16156) 119.6E-12 (N18335)     .9492     
+
+(N28777)    1.3911 (N28783)    1.3911 (N29557)    -.0080 (N29563)    -.0080     
+
+(SQUARE)     .0053 (X_D6.3)-11.48E-12 (X_D6.4)    -.1100 (X_D6.5)   -5.0101     
+
+(X_D6.6)    5.0154 (X_U7.1)   39.9600 (X_U7.6)     .6096 (X_U7.7) 489.9E-06     
+
+(X_U7.8)    0.0000 (X_U7.9)    1.0637 (N009551)    -.6320                       
+
+(N173240)     .9492                   (X_U5A.6)-525.9E-09                       
+
+(X_U5A.7)     .0052                   (X_U5A.8)     .0052                       
+
+(X_U5A.9)    0.0000                   (X_U5B.6)-535.3E-09                       
+
+(X_U5B.7)     .0053                   (X_U5B.8)     .0053                       
+
+(X_U5B.9)    0.0000                   (X_U7.10)    1.0637                       
+
+(X_U7.11)    1.0637                   (X_U7.12) 489.9E-06                       
+
+(X_U7.13)    3.4915                   (X_U7.14)    3.4915                       
+
+(X_U7.15)    3.4920                   (X_U7.16)    3.4920                       
+
+(X_U7.17) 48.99E-06                   (X_U7.18)    1.7457                       
+
+(X_U7.19)    1.7457                   (X_U7.20)    3.4920                       
+
+(X_U7.21)    3.4920                   (X_U7.22) 50.00E-06                       
+
+(X_U7.23)    1.3991                   (X_U7.24)     .5955                       
+
+(X_U7.25)     .5955                   (X_U7.26)     .7147                       
+
+(X_U7.27)     .7147                   (X_U7.28)     .6996                       
+
+(X_U7.29)     .6996                   (X_U7.30)     .6996                       
+
+(X_U7.31)     .6996                   (X_U7.32)    1.7460                       
+
+(X_U7.33)    1.7460                   (X_U7.34)   -1.7460                       
+
+(X_U7.35)     .6996                   (X_U7.36)     .6996                       
+
+(X_U7.37) 174.6E-06                   (X_U7.38)-174.6E-06                       
+
+(X_U7.39) 69.95E-06                   (X_U7.40)     .6991                       
+
+(X_U7.41)     .6991                   (X_U7.42)     .6996                       
+
+(X_U7.43)     .6996                   (X_U7.44)     .6993                       
+
+(X_U7.45)    1.7457                   (X_U7.46)    1.3991                       
+
+(X_U7.47)     .7314                   (X_U7.48)    1.3992                       
+
+(X_U7.49)    2.7855                   (X_U7.50)    2.7859                       
+
+(X_U7.51) 429.4E-06                   (X_U7.52)     .6996                       
+
+(X_U7.53) 428.6E-06                   (X_U7.54)     .7317                       
+
+(X_U7.55)    2.7855                   (X_U7.56)     .7314                       
+
+(X_U7.57)    1.7460                   (X_U7.58)    2.9062                       
+
+(X_U7.59)    3.4920                   (X_U7.60)     .6996                       
+
+(X_U7.61)    2.1757                   (X_U7.62)    2.1757                       
+
+(X_U7.63)    3.4920                   (X_U7.64)    2.1757                       
+
+(X_U7.65)     .3500                   (X_U7.66)    2.1220                       
+
+(X_U7.67)    1.0637                   (X_U7.68)    1.0637                       
+
+(X_U7.69)    3.1357                   (X_U7.70)    1.7460                       
+
+(X_U7.71)    3.1920                   (X_U7.72)     .3000                       
+
+(X_U7.73)    1.7460                   (X_U7.74)    1.7460                       
+
+(X_U7.75)    0.0000                   (X_U7.76)    2.3386                       
+
+(X_U7.77)  -31.3360                   (X_U7.78)     .7314                       
+
+(X_U7.79)    2.7855                   (X_U7.80)     .0051                       
+
+(X_U7.81)     .6551                   (X_U7.82)     .6991                       
+
+(X_U7.83)    1.3982                   (X_U7.84)    1.4044                       
+
+(X_U7.85)    1.8639                   (X_U7.86)     .0013                       
+
+(X_U7.87)    3.0000                   (X_U7.88)    0.0000                       
+
+(X_U7.89)   40.0000                   (X_U7.90)    -.0035                       
+
+(TESTWAVE)    3.5000                  (X_U5A.10)     .5562                      
+
+(X_U5A.11)   -9.9704                  (X_U5A.12)   -9.9704                      
+
+(X_U5A.13)     .5524                  (X_U5A.14)     .5524                      
+
+(X_U5A.53)    8.2000                  (X_U5A.54)   -9.1200                      
+
+(X_U5A.90)-70.71E-06                  (X_U5A.91)   40.0000                      
+
+(X_U5A.92)  -40.0000                  (X_U5A.99)    0.0000                      
+
+(X_U5B.10)     .5563                  (X_U5B.11)   -9.9704                      
+
+(X_U5B.12)   -9.9704                  (X_U5B.13)     .5524                      
+
+(X_U5B.14)     .5524                  (X_U5B.53)    8.2000                      
+
+(X_U5B.54)   -9.1200                  (X_U5B.90) 121.1E-06                      
+
+(X_U5B.91)   40.0000                  (X_U5B.92)  -40.0000                      
+
+(X_U5B.99)    0.0000                  (REFERENCE)    3.4920                     
+
+(ALTERNATING)    -.8122               (TEMPERATURE)    3.4940                   
+
+(X_U1.x_lm741.6)     .2617            (X_U1.x_lm741.7)   -5.1926                
+
+(X_U1.x_lm741.8)   -5.1926            (X_U1.x_lm741.9)    0.0000                
+
+(X_U2.x_lm741.6) 298.2E-06            (X_U2.x_lm741.7)   -3.1640                
+
+(X_U2.x_lm741.8)   -3.1640            (X_U2.x_lm741.9)    0.0000                
+
+(X_U6.x_lm741.6)    1.4949            (X_U6.x_lm741.7)  -11.8400                
+
+(X_U6.x_lm741.8)  -11.8400            (X_U6.x_lm741.9)    0.0000                
+
+(X_U9.x_lm741.6)-330.3E-06            (X_U9.x_lm741.7)    3.4975                
+
+(X_U9.x_lm741.8)    3.4975            (X_U9.x_lm741.9)    0.0000                
+
+(X_U1.x_lm741.10)    2.8842           (X_U1.x_lm741.11)    9.9527               
+
+(X_U1.x_lm741.12)    9.9665           (X_U1.x_lm741.13)    2.9007               
+
+(X_U1.x_lm741.14)    2.8959           (X_U1.x_lm741.53)    9.0000               
+
+(X_U1.x_lm741.54)   -9.0000           (X_U1.x_lm741.90)  -40.5680               
+
+(X_U1.x_lm741.91)   40.0000           (X_U1.x_lm741.92)  -40.0000               
+
+(X_U1.x_lm741.99)    0.0000           (X_U10.x_lm741.6)-330.6E-06               
+
+(X_U10.x_lm741.7)    3.4972           (X_U10.x_lm741.8)    3.4972               
+
+(X_U10.x_lm741.9)    0.0000           (X_U2.x_lm741.10)   -3.7711               
+
+(X_U2.x_lm741.11)    9.9609           (X_U2.x_lm741.12)    9.9610               
+
+(X_U2.x_lm741.13)   -3.7575           (X_U2.x_lm741.14)   -3.7575               
+
+(X_U2.x_lm741.53)    9.0000           (X_U2.x_lm741.54)   -9.0000               
+
+(X_U2.x_lm741.90) 78.58E-06           (X_U2.x_lm741.91)   40.0000               
+
+(X_U2.x_lm741.92)  -40.0000           (X_U2.x_lm741.99)    0.0000               
+
+(X_U6.x_lm741.10)    -.6342           (X_U6.x_lm741.11)    9.9207               
+
+(X_U6.x_lm741.12)   10.0000           (X_U6.x_lm741.13)    -.6064               
+
+(X_U6.x_lm741.14)    -.6342           (X_U6.x_lm741.53)    9.0000               
+
+(X_U6.x_lm741.54)   -9.0000           (X_U6.x_lm741.90)  -40.6070               
+
+(X_U6.x_lm741.91)   40.0000           (X_U6.x_lm741.92)  -40.0000               
+
+(X_U6.x_lm741.99)    0.0000           (X_U9.x_lm741.10)     .7831               
+
+(X_U9.x_lm741.11)    9.9601           (X_U9.x_lm741.12)    9.9600               
+
+(X_U9.x_lm741.13)     .7971           (X_U9.x_lm741.14)     .7971               
+
+(X_U9.x_lm741.53)    9.0000           (X_U9.x_lm741.54)   -9.0000               
+
+(X_U9.x_lm741.90)     .0696           (X_U9.x_lm741.91)   40.0000               
+
+(X_U9.x_lm741.92)  -40.0000           (X_U9.x_lm741.99)    0.0000               
+
+(X_U10.x_lm741.10)    -.6156          (X_U10.x_lm741.11)    9.9603              
+
+(X_U10.x_lm741.12)    9.9603          (X_U10.x_lm741.13)    -.6018              
+
+(X_U10.x_lm741.14)    -.6018          (X_U10.x_lm741.53)    9.0000              
+
+(X_U10.x_lm741.54)   -9.0000          (X_U10.x_lm741.90)     .1028              
+
+(X_U10.x_lm741.91)   40.0000          (X_U10.x_lm741.92)  -40.0000              
+
+(X_U10.x_lm741.99)    0.0000          (X_D7.xinst1n4621.1)   -3.9841            
+
+(X_D7.xinst1n4621.3)    3.1719        (X_D7.xinst1n4621.9)-6.512E-12        
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V7        -6.650E-03
+    V_V6        -2.486E-02
+    V_V10       -4.000E-08
+    V_V12       -9.501E-08
+    X_U5B.vb    -5.353E-12
+    X_U5B.vc     8.196E-12
+    X_U5B.ve     9.126E-12
+    X_U5B.vlim   1.211E-07
+    X_U5B.vlp   -4.000E-11
+    X_U5B.vln   -4.000E-11
+    X_U5A.vb    -5.259E-12
+    X_U5A.vc     8.196E-12
+    X_U5A.ve     9.126E-12
+    X_U5A.vlim  -7.071E-08
+    X_U5A.vlp   -4.000E-11
+    X_U5A.vln   -4.000E-11
+    X_U7.V27     0.000E+00
+    X_U7.V28     0.000E+00
+    X_U7.V29     0.000E+00
+    X_U7.V30     3.300E-07
+    X_U7.V33     5.099E-09
+    X_U7.V43     7.179E-21
+    X_U7.V45     9.970E-12
+    X_U7.V46     1.598E-12
+    X_U7.V48    -1.398E-06
+    X_U7.V143   -1.250E-11
+    X_U1.x_lm741.vb   2.617E-06
+    X_U1.x_lm741.vc   1.217E-11
+    X_U1.x_lm741.ve   5.931E-12
+    X_U1.x_lm741.vlim  -4.057E-02
+    X_U1.x_lm741.vlp  -8.057E-11
+    X_U1.x_lm741.vln   2.767E-06
+    X_U2.x_lm741.vb   2.982E-09
+    X_U2.x_lm741.vc   1.216E-11
+    X_U2.x_lm741.ve   5.931E-12
+    X_U2.x_lm741.vlim   7.858E-08
+    X_U2.x_lm741.vlp  -4.000E-11
+    X_U2.x_lm741.vln  -4.000E-11
+    X_U6.x_lm741.vb   1.495E-05
+    X_U6.x_lm741.vc   1.881E-11
+    X_U6.x_lm741.ve  -3.161E-02
+    X_U6.x_lm741.vlim  -4.061E-02
+    X_U6.x_lm741.vlp  -8.061E-11
+    X_U6.x_lm741.vln   1.268E-05
+    X_U9.x_lm741.vb  -3.303E-09
+    X_U9.x_lm741.vc   5.507E-12
+    X_U9.x_lm741.ve   1.259E-11
+    X_U9.x_lm741.vlim   6.963E-05
+    X_U9.x_lm741.vlp  -3.993E-11
+    X_U9.x_lm741.vln  -4.007E-11
+    X_U10.x_lm741.vb  -3.306E-09
+    X_U10.x_lm741.vc   5.509E-12
+    X_U10.x_lm741.ve   1.259E-11
+    X_U10.x_lm741.vlim   1.028E-04
+    X_U10.x_lm741.vlp  -3.990E-11
+    X_U10.x_lm741.vln  -4.011E-11
+
+    TOTAL POWER DISSIPATION  -1.51E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/01/19 10:32:48 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .55
+  Total job time (using Solver 1)   =        8.72
+

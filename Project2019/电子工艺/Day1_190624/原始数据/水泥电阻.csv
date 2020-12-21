@@ -1,0 +1,41 @@
+[MeasureCondition]
+Display,Main parameter,Label,R
+Display,Main parameter,Type,R
+Display,Main parameter,Deviation display,ABS
+Display,Main parameter,Deviation standard value,+0.00000E+00
+Display,Main parameter,Label,D
+Display,Sub parameter,Type,D
+Display,Sub parameter,Deviation display,ABS
+Display,Sub parameter,Deviation standard value,+0.00000E+00
+Measurement,Frequency,Frequency,+1.00000E+03
+Measurement,Signal level,Fixed voltage level,OFF
+Measurement,Signal level,Measurement voltage level,1.00
+Measurement,Signal level,Fixed current level,+1.00000E-03
+Measurement,Range,Auto conversion,ON
+Measurement,Range,Measurement range,10 Ohm
+Measurement,Trigger,Trigger source,Bus
+Measurement,Trigger,Trigger delay interval,0.0080
+Measurement,Mesurement speed,Mesurement speed,MED
+Measurement,DC bias,Enable,OFF
+Measurement,DC bias,Setting,0.000
+Measurement,Averaging,Enable,OFF
+Measurement,Averaging,Averaging count,1
+Remarks,Remarks,Remarks,
+
+[SpotSetting]
+Repeat count,10
+Interval,1.0
+Remarks,
+
+[Spot Result]
+No.,Pass Time,Result
+1,00:00:00.078,+0,203.161E+0,8.96833E+3
+2,00:00:01.125,+0,203.161E+0,8.24612E+3
+3,00:00:02.172,+0,203.159E+0,8.59534E+3
+4,00:00:03.219,+0,203.160E+0,8.66943E+3
+5,00:00:04.266,+0,203.159E+0,8.46812E+3
+6,00:00:05.313,+0,203.160E+0,8.00812E+3
+7,00:00:06.359,+0,203.159E+0,8.30923E+3
+8,00:00:07.406,+0,203.160E+0,8.28942E+3
+9,00:00:08.438,+0,203.159E+0,8.28499E+3
+10,00:00:09.484,+0,203.159E+0,8.53398E+3

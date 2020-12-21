@@ -1,0 +1,50 @@
+
+**** 07/01/19 09:57:37 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "x.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000 0 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source X
+R_R19         N29190 TEMPERATURE  20.2k TC=0,0 
+X_U9         N29184 N29190 +10V -10V TEMPERATURE LM741
+X_U7         0 TMP20 REFERENCE T TMP20 
+R_R18         0 N29190  20k TC=0,0 
+R_R20         TMP20 N29184  100k TC=0,0 
+V_V7         +10V 0 10Vdc
+V_V10         T 0  AC 0
++SIN 40 10 .001 0 0 0
+V_V6         -10V 0 -10Vdc
+V_V8         REFERENCE 0 3.5Vdc
+
+**** RESUMING x.cir ****
+.END
+
+
+ERROR(ORPSIM-15108): Subcircuit TMP20 used by X_U7 is undefined
+

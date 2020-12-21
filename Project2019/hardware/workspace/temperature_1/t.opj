@@ -1,0 +1,72 @@
+(ExpressProject "t"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\t.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\t-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\t-pspicefiles\schematic1\t.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\t-pspicefiles\schematic1\t.sim"
+        (DisplayName "SCHEMATIC1-t")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (LP_A676-TYP
+      (FullPartName "LP_A676-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_SIDELED.OLB")
+      (DeviceIndex "0"))
+    (LP_A67C-TYP
+      (FullPartName "LP_A67C-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_SIDELED.OLB")
+      (DeviceIndex "0"))
+    (LB_3333-TYP
+      (FullPartName "LB_3333-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_3MMRADIAL.OLB")
+      (DeviceIndex "0"))
+    (LB_543C-TYP
+      (FullPartName "LB_543C-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_5MMRADIAL.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Workspace\Cadence\temperature_s")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
+        (Scroll "-26 0")
+        (Zoom "101")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE_1\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "isaac")
+  (ISPCBBASICLICENSE "false"))

@@ -1,0 +1,95 @@
+(ExpressProject "t"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\t.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "TRUE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80"))
+  (Folder "Outputs"
+    (File ".\t-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\t-pspicefiles\schematic1\t.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\t-pspicefiles\schematic1\t.sim"
+        (DisplayName "SCHEMATIC1-t")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (LP_A676-TYP
+      (FullPartName "LP_A676-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_SIDELED.OLB")
+      (DeviceIndex "0"))
+    (LB_3333-TYP
+      (FullPartName "LB_3333-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_3MMRADIAL.OLB")
+      (DeviceIndex "0"))
+    (LP_M67K-TYP
+      (FullPartName "LP_M67K-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_MINITOPLED.OLB")
+      (DeviceIndex "0"))
+    (1N4099
+      (FullPartName "1N4099.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Workspace\Cadence\temperature_s")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Workspace\Cadence\temperature_1_2\t.dsn")
+      (Path "Design Resources" "C:\Workspace\Cadence\temperature_1_2\t.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 512")
+        (Scroll "-326 -8")
+        (Zoom "101")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE_1_2\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "isaac")
+  (ISPCBBASICLICENSE "false"))

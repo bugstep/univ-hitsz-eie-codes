@@ -1,0 +1,92 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : dsbssb.brd                                    )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Tue Jul 16 09:41:34 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  Yes
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'C:/Workspace/Cadence/03_t/allegro'
+Design Directory:            'C:/Workspace/Cadence/03_t'
+Old design name:             'C:/Workspace/Cadence/03_t/dsbssb.brd'
+New design name:             'C:/Workspace/Cadence/03_t/dsbssb.brd'
+
+CmdLine: netrev -$ -i C:/Workspace/Cadence/03_t/allegro -x -y 1 -z -q netrev_constraint_report.xml C:/Workspace/Cadence/03_t/#Taaaaao02392.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read C:/Workspace/Cadence/03_t/allegro/pstchip.dat 
+   Finished reading C:/Workspace/Cadence/03_t/allegro/pstchip.dat (00:00:00.06)
+Starting to read C:/Workspace/Cadence/03_t/allegro/pstxprt.dat 
+   Finished reading C:/Workspace/Cadence/03_t/allegro/pstxprt.dat (00:00:00.00)
+Starting to read C:/Workspace/Cadence/03_t/allegro/pstxnet.dat 
+   Finished reading C:/Workspace/Cadence/03_t/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Jul 16 9:41:34 2019
+   DESIGN NAME : 'DSBSSB'
+   PACKAGING ON Feb 15 2016 19:53:59
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:01:23
+elapsed time  0:00:01
+

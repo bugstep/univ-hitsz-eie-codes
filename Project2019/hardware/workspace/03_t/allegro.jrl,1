@@ -1,0 +1,15 @@
+\t (00:00:06) allegro 16.6-2015 S112 (v16-6-112JB) Windows 32
+\t (00:00:06)     Journal start - Tue Jul 16 09:30:20 2019
+\t (00:00:06)         Host=VIRTUAL User=isaac Pid=7716 CPUs=4
+\t (00:00:06) CmdLine= C:\Cadence\Cadence_SPB_16.6\tools\pcb\bin\allegro.exe -mpssession isaac C:\Workspace\Cadence\03_t\dsbssb.brd
+\t (00:00:06) 
+\t (00:00:07) Opening existing design...
+\d (00:00:07) Design opened: C:/Workspace/Cadence/03_t/dsbssb.brd
+\i (00:00:07) trapsize 6406
+\i (00:00:07) trapsize 6291
+\i (00:00:07) trapsize 6426
+\i (00:00:08) trapsize 6546
+\i (00:00:08) trapsize 10585
+\i (00:00:09) generaledit 
+\i (00:00:14) exit 
+\t (00:00:15)     Journal end - Tue Jul 16 09:30:29 2019

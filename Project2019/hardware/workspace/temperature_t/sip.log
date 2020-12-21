@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : sip.dra                                       )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Mon Jul 08 09:58:41 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Workspace/Cadence/temperature_t
+    Name      = sip.psm
+    User      = isaac
+    Machine   = VIRTUAL
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

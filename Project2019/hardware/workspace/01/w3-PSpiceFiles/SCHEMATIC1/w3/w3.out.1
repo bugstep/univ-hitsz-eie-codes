@@ -1,0 +1,60 @@
+
+**** 07/01/19 00:20:47 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w3"  [ C:\Workspace\Cadence\01\w3-pspicefiles\schematic1\w3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 1u 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source W3
+R_R12         N05986 N06044  4.7k TC=0,0 
+X_U12B         N06070 VOUT3 +VCC -VCC VOUT3 LM2904/ON
+R_R11         N06028 N06044  330 TC=0,0 
+X_D6         0 N06070 1n5231/ON
+D_D7         N06044 N06070 D1N4148_1 
+R_R9         0 N05994  139k TC=0,0 
+X_U11A         N05994 N05986 +VCC -VCC N06028 LM2904/ON
+R_R10         N05994 N06044  100k TC=0,0 
+C_C3         0 N05986  .1u  TC=0,0 
+V_V2         -VCC 0 -7.5Vdc
+V_V1         +VCC 0 7.5Vdc
+X_D8         N07045 N07041 1n5231/ON
+V_V3         N07041 N07045 -7.5Vdc
+
+**** RESUMING w3.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N07041 is floating
+
+ERROR(ORPSIM-15142): Node N07045 is floating
+
+ERROR(ORPSIM-15142): Node X_D8.3 is floating
+
+ERROR(ORPSIM-15142): Node X_D8.4 is floating
+
+ERROR(ORPSIM-15142): Node X_D8.5 is floating
+

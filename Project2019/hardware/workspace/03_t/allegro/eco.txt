@@ -1,0 +1,228 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  AD_OUT       pins ADDED TO this new net
+                                 R9.1           U4.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  CARRIER      pins ADDED TO this new net
+                                 J10.1          U4.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  CLK          pins ADDED TO this new net
+                                 J1.1           U1.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  FILTER_IN    pins ADDED TO this new net
+                                 J4.1           U1.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  FILTER_OUT   pins ADDED TO this new net
+                                 R3.1           U1.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins ADDED TO this existing net (pins not previously on any net)
+                                 C1.2                           
+                                 C2.2                           
+                                 C3.2                           
+                                 C4.2                           
+                                 C5.2                           
+                                 C6.2                           
+                                 C7.2                           
+                                 C8.2                           
+                                 J6.1                           
+                                 R2.1                           
+                                 R6.1                           
+                                 R7.1                           
+                                 U4.2                           
+                                 U4.4                           
+                                 U4.6                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  MULTIPLE_OUT pins ADDED TO this new net
+                                 J11.1          R5.2           U3.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00266       pins ADDED TO this new net
+                                 U1.3           U1.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N00997       pins ADDED TO this new net
+                                 R3.2           U2.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N01001       pins ADDED TO this new net
+                                 R1.1           R2.2           U2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N02880       pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 R8.2           U3.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N02884       pins ADDED TO this new net
+                                 R4.1           R6.2           U3.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N03362       pins ADDED TO this new net
+                                 R9.2           U3.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N03366       pins ADDED TO this new net
+                                 R5.1           R7.2           U3.6           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  OUT          pins ADDED TO this new net
+                                 J5.1           R1.2           U2.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SOURCE       pins ADDED TO this new net
+                                 J9.1           R8.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  SOURCE_OUT   pins ADDED TO this new net
+                                 R4.2           U3.1           U4.1           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  V1+          pins ADDED TO this new net
+                                 C1.1           C2.1           J2.1           
+                                 U1.7           U2.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  V1-          pins ADDED TO this new net
+                                 C3.1           C4.1           J3.1           
+                                 U1.2           U2.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  V2+          pins ADDED TO this new net
+                                 C5.1           C6.1           J7.1           
+                                 U3.8           U4.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  V2-          pins ADDED TO this new net
+                                 C7.1           C8.1           J8.1           
+                                 U3.4           U4.5           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ AD633/AD_SOIC8_AD633/AD
+ CHA_CHA_CHA
+ C_0805_0.1U
+ C_0805_10U
+ MAX291/SO8_SOIC8_MAX291/SO8
+ NE5532_SOIC8_NE5532
+ R_0805_1K
+ R_0805_4K
+ R_0805_9K
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1                  C_0805_10U            
+ C2                  C_0805_0.1U           
+ C3                  C_0805_10U            
+ C4                  C_0805_0.1U           
+ C5                  C_0805_10U            
+ C6                  C_0805_0.1U           
+ C7                  C_0805_10U            
+ C8                  C_0805_0.1U           
+ J1                  CHA_CHA_CHA           
+ J2                  CHA_CHA_CHA           
+ J3                  CHA_CHA_CHA           
+ J4                  CHA_CHA_CHA           
+ J5                  CHA_CHA_CHA           
+ J6                  CHA_CHA_CHA           
+ J7                  CHA_CHA_CHA           
+ J8                  CHA_CHA_CHA           
+ J9                  CHA_CHA_CHA           
+ J10                 CHA_CHA_CHA           
+ J11                 CHA_CHA_CHA           
+ R1                  R_0805_9K             
+ R2                  R_0805_1K             
+ R3                  R_0805_1K             
+ R4                  R_0805_4K             
+ R5                  R_0805_1K             
+ R6                  R_0805_1K             
+ R7                  R_0805_1K             
+ R8                  R_0805_1K             
+ R9                  R_0805_1K             
+ U1                  MAX291/SO8_SOIC8_MAX291/SO8 
+ U2                  NE5532_SOIC8_NE5532   
+ U3                  NE5532_SOIC8_NE5532   
+ U4                  AD633/AD_SOIC8_AD633/AD 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C1.2                           PRIM_FILE      .\pstchip.dat
+ C2.2                           PRIM_FILE      .\pstchip.dat
+ C3.2                           PRIM_FILE      .\pstchip.dat
+ C4.2                           PRIM_FILE      .\pstchip.dat
+ C5.2                           PRIM_FILE      .\pstchip.dat
+ C6.2                           PRIM_FILE      .\pstchip.dat
+ C7.2                           PRIM_FILE      .\pstchip.dat
+ C8.2                           PRIM_FILE      .\pstchip.dat
+ J1.1                           PRIM_FILE      .\pstchip.dat
+ J2.1                           PRIM_FILE      .\pstchip.dat
+ J3.1                           PRIM_FILE      .\pstchip.dat
+ J4.1                           PRIM_FILE      .\pstchip.dat
+ J5.1                           PRIM_FILE      .\pstchip.dat
+ J6.1                           PRIM_FILE      .\pstchip.dat
+ J7.1                           PRIM_FILE      .\pstchip.dat
+ J8.1                           PRIM_FILE      .\pstchip.dat
+ J9.1                           PRIM_FILE      .\pstchip.dat
+ J10.1                          PRIM_FILE      .\pstchip.dat
+ J11.1                          PRIM_FILE      .\pstchip.dat
+ R1.2                           PRIM_FILE      .\pstchip.dat
+ R2.2                           PRIM_FILE      .\pstchip.dat
+ R3.2                           PRIM_FILE      .\pstchip.dat
+ R4.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ R8.2                           PRIM_FILE      .\pstchip.dat
+ R9.2                           PRIM_FILE      .\pstchip.dat
+ U1.2                           PRIM_FILE      .\pstchip.dat
+ U2.3                           PRIM_FILE      .\pstchip.dat
+ U3.3                           PRIM_FILE      .\pstchip.dat
+ U3.5                           PRIM_FILE      .\pstchip.dat
+ U4.6                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/03_t/dsbssb.brd                                        |
+|                                                    Tue Jul 16 09:30:09 2019  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :      73                                        |
+|       Comp definitions added:       9                                        |
+|       Components added      :      32                                        |
+|       Slot property added   :      33                                        |
+|                                                                              |
+|   Total ECO changes reported:     147                                        |
+|------------------------------------------------------------------------------|

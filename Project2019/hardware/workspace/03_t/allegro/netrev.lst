@@ -1,0 +1,96 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : dsbssb.brd                                    )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Tue Jul 16 09:30:09 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'C:\WORKSPACE\CADENCE\03_T\allegro'
+Design Directory:            'C:/Workspace/Cadence/03_t'
+Old design name:             'C:/Workspace/Cadence/03_t/dsbssb.brd'
+New design name:             'C:/Workspace/Cadence/03_t/dsbssb.brd'
+
+CmdLine: netrev.exe -y 1 -n -i C:\WORKSPACE\CADENCE\03_T\allegro C:\Workspace\Cadence\03_t\dsbssb.brd C:\Workspace\Cadence\03_t\dsbssb.brd
+
+------ Preparing to read pst files ------
+
+Starting to read C:/WORKSPACE/CADENCE/03_T/allegro/pstchip.dat 
+   Finished reading C:/WORKSPACE/CADENCE/03_T/allegro/pstchip.dat (00:00:00.31)
+Starting to read C:/WORKSPACE/CADENCE/03_T/allegro/pstxprt.dat 
+   Finished reading C:/WORKSPACE/CADENCE/03_T/allegro/pstxprt.dat (00:00:00.00)
+Starting to read C:/WORKSPACE/CADENCE/03_T/allegro/pstxnet.dat 
+   Finished reading C:/WORKSPACE/CADENCE/03_T/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'CHA' used by RefDes J1 for device 'CHA_CHA_CHA' not found in PSMPATH or must be "dbdoctor"ed.
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/local/pcb/padstacks 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols 
+           C:/Workspace/Cadence/temperature_t/FZ/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Jul 16 9:30:09 2019
+   DESIGN NAME : 'DSBSSB'
+   PACKAGING ON Feb 15 2016 19:53:59
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+  1 warnings detected
+
+cpu time      0:05:17
+elapsed time  0:00:02
+

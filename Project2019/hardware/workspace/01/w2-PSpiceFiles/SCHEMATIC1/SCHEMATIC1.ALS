@@ -1,0 +1,19 @@
+.ALIASES
+R_R3            R3(1=N05077 2=N05093 ) CN @W2.SCHEMATIC1(sch_1):INS4929@ANALOG.R.Normal(chips)
+D_D1            D1(1=N05093 2=N05119 ) CN @W2.SCHEMATIC1(sch_1):INS4989@ON_DIODE.D1N5819/ON.Normal(chips)
+C_C1            C1(1=0 2=N05035 ) CN @W2.SCHEMATIC1(sch_1):INS4973@ANALOG.C.Normal(chips)
+R_R2            R2(1=N05043 2=N05093 ) CN @W2.SCHEMATIC1(sch_1):INS4907@ANALOG.R.Normal(chips)
+R_R1            R1(1=0 2=N05043 ) CN @W2.SCHEMATIC1(sch_1):INS4885@ANALOG.R.Normal(chips)
+X_D2            D2(1=0 2=N05119 ) CN @W2.SCHEMATIC1(sch_1):INS5011@ON_DIODE.1n5231/ON.Normal(chips)
+R_R4            R4(1=N05035 2=N05093 ) CN @W2.SCHEMATIC1(sch_1):INS4951@ANALOG.R.Normal(chips)
+V_V1            V1(+=+VCC -=0 ) CN @W2.SCHEMATIC1(sch_1):INS5380@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=-VCC -=0 ) CN @W2.SCHEMATIC1(sch_1):INS5400@SOURCE.VDC.Normal(chips)
+X_U11A          U11A(+=N05043 -=N05035 V+=+VCC V-=-VCC OUT=N05077 ) CN
++@W2.SCHEMATIC1(sch_1):INS5541@TEX_INST.TL082/301/TI.Normal(chips)
+X_U11B          U11B(+=N05119 -=VOUT2 V+=+VCC V-=-VCC OUT=VOUT2 ) CN
++@W2.SCHEMATIC1(sch_1):INS5597@TEX_INST.TL082/301/TI.Normal(chips)
+_    _(+Vcc=+VCC)
+_    _(-Vcc=-VCC)
+_    _(Gnd=0)
+_    _(Vout2=VOUT2)
+.ENDALIASES

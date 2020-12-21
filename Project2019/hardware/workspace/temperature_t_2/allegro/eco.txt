@@ -1,0 +1,35 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  C:/Workspace/Cadence/temperature_t_2/temperature.brd                        |
+|                                                    Tue Jul 09 23:33:43 2019  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  0            pins MOVED FROM this net (to net name listed on right)
+                                 J1.3            350.000 40.0000
+                                                                           TEMP
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  -10V         pins MOVED FROM this net (to net name listed on right)
+                                 J1.2            350.000 140.000
+                                                                            REF
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  LED          pins MOVED FROM this net (to net name listed on right)
+                                 J1.10           350.000 -660.00
+                                                                           -10V
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  REF          pins MOVED FROM this net (to net name listed on right)
+                                 J1.8            350.000 -460.00
+                                                                            LED
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  TEMP         pins MOVED FROM this net (to net name listed on right)
+                                 J1.6            350.000 -260.00
+                                                                              0
+|------------------------------------------------------------------------------|
+|       Nets changed          :       5                                        |
+|                                                                              |
+|   Total ECO changes reported:       5                                        |
+|------------------------------------------------------------------------------|

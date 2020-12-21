@@ -1,0 +1,60 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Dump Library Log                                                 )
+(                                                                     )
+(    Software Version : 16.6P004                                      )
+(    Date/Time        : Sun Apr 08 16:58:36 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+*** file: C:/USERS/ADMINISTRATOR/DESKTOP/HITV1.31/allegro/FRECIRCUIT.brd ***
+
+
+
+  *** Creating padstacks. ***
+
+  SMD50_25 being dumped.
+
+  PAD60SQ36D being dumped.
+
+  PAD55SQ25D being dumped.
+
+  60X50 being dumped.
+
+  PAD50CIR32D being dumped.
+
+  PAD60CIR36D being dumped.
+
+  PAD65CIR42D being dumped.
+
+  PAD55CIR25D being dumped.
+
+
+  *** Creating package symbols (.dra and .psm) ***
+
+  capck05 being dumped.
+
+  0805 being dumped.
+
+  tep being dumped.
+
+  do41-1 being dumped.
+
+  do35-1 being dumped.
+
+  soic8 being dumped.
+
+  cap196 being dumped.
+
+
+
+*********************** Summary *********************
+ERRORs reported:                           0
+
+Number of padstacks dumped:                8
+Number of package symbols dumped:          7
+
+Total number of symbols dumped:            7
+*****************************************************
+

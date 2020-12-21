@@ -1,0 +1,28 @@
+\t (00:00:28) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:28)     Journal start - Sun May 06 11:08:24 2018
+\t (00:00:28)         Host=DESKTOP-7NL7HDV User=Lenovo Pid=13804 CPUs=4
+\t (00:00:28) 
+\d (00:00:28) Database opened: C:/Users/Lenovo/Desktop/PCB/FZ/tep.dra
+\i (00:00:28) etchedit 
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 249.65 -21.72
+\i (00:00:29) trapsize 1077
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 428.41 -21.71
+\i (00:00:29) trapsize 2154
+\i (00:00:29) zoom in 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom in 350.88 -420.17
+\i (00:00:29) trapsize 1077
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in 385.34 96.74
+\i (00:00:31) trapsize 538
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out 377.80 122.58
+\i (00:00:32) trapsize 1077
+\i (00:00:33) exit 
+\t (00:00:33)     Journal end - Sun May 06 11:08:29 2018

@@ -1,0 +1,184 @@
+
+**** 06/27/19 11:47:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w2"  [ C:\Workspace\Cadence\01\w2-PSpiceFiles\SCHEMATIC1\w2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 .6m .5m 1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source W2
+R_R3         N05077 N05093  330 TC=0,0 
+D_D1         N05093 N05119 D1N5819/ON 
+C_C1         0 N05035  1n  TC=0,0 
+R_R2         N05043 N05093  100k TC=0,0 
+R_R1         0 N05043  139k TC=0,0 
+X_D2         0 N05119 1n5231/ON
+R_R4         N05035 N05093  4.7k TC=0,0 
+V_V1         +VCC 0 7.5Vdc
+V_V2         -VCC 0 -7.5Vdc
+X_U11A         N05035 N05043 -VCC +VCC N05077 TL082/301/TI
+X_U11B         VOUT2 N05119 -VCC +VCC VOUT2 TL082/301/TI
+
+**** RESUMING w2.cir ****
+.END
+
+**** 06/27/19 11:47:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w2"  [ C:\Workspace\Cadence\01\w2-PSpiceFiles\SCHEMATIC1\w2.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N5819/ON      X_D2.MD1        X_D2.MD3        X_D2.MD2        
+  T_Measured                   27              27              27            
+   T_Current                   25              25              25            
+          IS   11.927900E-06    3.540710E-15    2.500000E-12    2.500000E-12 
+           N    1.16517         1.05719          .173176         .274509     
+          BV   40                                                            
+         IBV    1.000000E-03                                                 
+          RS     .062542         .62                                         
+          TT   26.273000E-09   10.000000E-09                                 
+         CJO  150.114000E-12  170.000000E-12                                 
+          VJ    1.5                                                          
+           M     .590203                                                     
+          EG    1.3                              .1              .1          
+         XTI    3.22098         1               0               0            
+
+
+               X_U11A.DX       X_U11B.DX       
+          IS  800.000000E-18  800.000000E-18 
+
+
+**** 06/27/19 11:47:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w2"  [ C:\Workspace\Cadence\01\w2-PSpiceFiles\SCHEMATIC1\w2.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U11A.JX       X_U11B.JX       
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+**** 06/27/19 11:47:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w2"  [ C:\Workspace\Cadence\01\w2-PSpiceFiles\SCHEMATIC1\w2.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D2.MDR        X_D2.MDRBV      
+           R    1               1            
+         TC1                  284.722000E-06 
+
+
+INTERNAL ERROR -- Overflow, Convert
+
+ABORTING SIMULATION
+**** 06/27/19 11:47:34 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-w2"  [ C:\Workspace\Cadence\01\w2-PSpiceFiles\SCHEMATIC1\w2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           8
+  External (NCNODS)                 =          39
+  Total (NUMNOD)                    =          41
+
+Total device count (NUMEL)          =          74
+  Capacitors (C)                    =           5
+  Diodes (D)                        =          14
+  VCVS (E)                          =           3
+  CCCS (F)                          =           2
+  VCCS (G)                          =           4
+  CCVS (H)                          =           2
+  Current Sources (I)               =           4
+  JFETs (J)                         =           4
+  Resistors (R)                     =          22
+  Voltage Sources (V)               =          14
+
+Number of subcircuits (X)           =           3
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          60
+  Initial no. elements (NTTAR)      =         221
+  No. elements w/ fillin (NTTBR)    =         360
+  No. fillins (IFILL)               =         139
+  No. overflows (NTTOV)             =         168
+  No. LU operations (IOPS)          =        5138
+  Percent sparsity (PERSPA)         =      90.000
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           4
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               2
+  Readin                            =         .05
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .50
+  Total job time (using Solver 1)   =         .05
+

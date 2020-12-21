@@ -1,0 +1,334 @@
+\t (00:00:13) allegro 16.6-2015 S112 (v16-6-112JB) Windows 32
+\t (00:00:13)     Journal start - Sat Jul 13 00:56:39 2019
+\t (00:00:13)         Host=VIRTUAL User=isaac Pid=9280 CPUs=4
+\t (00:00:13) CmdLine= C:\Cadence\Cadence_SPB_16.6\tools\pcb\bin\allegro.exe C:\Workspace\Cadence\temperature_t_2\temperature.brd
+\t (00:00:13) 
+\t (00:00:15) Opening existing design...
+\d (00:00:16) Design opened: C:/Workspace/Cadence/temperature_t_2/temperature.brd
+\i (00:00:17) trapsize 177683
+\i (00:00:18) trapsize 174489
+\i (00:00:19) trapsize 178227
+\i (00:00:20) trapsize 181560
+\i (00:00:20) trapsize 181560
+\i (00:00:24) generaledit 
+\i (00:18:00) slide 
+\t (00:18:01) Pick element to slide.
+\i (00:18:03) pick grid 817.0214 -239.6587
+\t (00:18:03) last pick:  820.0000 -240.0000
+\t (00:18:03) last pick:  813.6937 -236.3063
+\t (00:18:03) Waiting for the destination pick.
+\i (00:18:04) pick grid 813.3902 -261.4460
+\t (00:18:04) last pick:  810.0000 -260.0000
+\t (00:18:04) No DRC errors detected.
+\t (00:18:04) Pick another element to slide.
+\i (00:18:06) zoom in 1 
+\i (00:18:06) setwindow pcb
+\i (00:18:06) zoom in 838.8087 -232.3963
+\i (00:18:06) trapsize 90780
+\i (00:18:06) zoom in 1 
+\i (00:18:06) setwindow pcb
+\i (00:18:06) zoom in 838.8087 -232.3963
+\i (00:18:06) trapsize 45390
+\i (00:18:07) pick grid 803.4045 -236.0275
+\t (00:18:07) last pick:  800.0000 -240.0000
+\t (00:18:07) last pick:  808.7015 -241.2985
+\t (00:18:07) Waiting for the destination pick.
+\i (00:18:08) pick grid 805.2201 -239.6587
+\t (00:18:08) last pick:  810.0000 -240.0000
+\t (00:18:08) No DRC errors detected.
+\t (00:18:08) Pick another element to slide.
+\i (00:18:09) zoom out 1 
+\i (00:18:09) setwindow pcb
+\i (00:18:09) zoom out 846.0711 -264.1693
+\i (00:18:09) trapsize 90780
+\i (00:18:09) zoom out 1 
+\i (00:18:09) setwindow pcb
+\i (00:18:09) zoom out 846.0711 -264.1693
+\i (00:18:09) trapsize 181560
+\i (00:18:09) zoom out 1 
+\i (00:18:09) setwindow pcb
+\i (00:18:09) zoom out 846.0712 -264.1694
+\i (00:18:09) trapsize 363120
+\i (00:18:10) zoom in 1 
+\i (00:18:10) setwindow pcb
+\i (00:18:10) zoom in 1125.6737 -416.6799
+\i (00:18:10) trapsize 181560
+\i (00:18:10) zoom in 1 
+\i (00:18:10) setwindow pcb
+\i (00:18:10) zoom in 1125.6737 -416.6798
+\i (00:18:10) trapsize 90780
+\i (00:18:11) zoom out 1 
+\i (00:18:11) setwindow pcb
+\i (00:18:11) zoom out 1125.6737 -416.6798
+\i (00:18:11) trapsize 181560
+\i (00:26:59) zoom in 1 
+\i (00:26:59) setwindow pcb
+\i (00:26:59) zoom in 1848.2833 738.0431
+\i (00:26:59) trapsize 90780
+\i (00:27:00) zoom in 1 
+\i (00:27:00) setwindow pcb
+\i (00:27:00) zoom in 1848.2833 738.0432
+\i (00:27:00) trapsize 45390
+\i (00:27:00) zoom out 1 
+\i (00:27:00) setwindow pcb
+\i (00:27:00) zoom out 1848.2834 738.0432
+\i (00:27:00) trapsize 90780
+\i (00:27:17) drag_start grid 849.7022 914.1566
+\i (00:27:17) drag_stop 847.8866 892.3693
+\t (00:27:17) last pick:  847.8866 910.0000
+\t (00:27:17) Waiting for the destination pick.
+\i (00:27:18) pick grid 844.2554 885.1069
+\t (00:27:18) last pick:  840.0000 890.0000
+\t (00:27:18) No DRC errors detected.
+\t (00:27:18) Pick another element to slide.
+\i (00:27:20) pick grid 1906.3826 369.4760
+\t (00:27:20) last pick:  1910.0000 370.0000
+\t (00:27:20) last pick:  1910.0000 369.4760
+\t (00:27:20) Waiting for the destination pick.
+\i (00:27:21) pick grid 1893.6734 369.4760
+\t (00:27:21) last pick:  1890.0000 370.0000
+\t (00:27:21) No DRC errors detected.
+\t (00:27:21) Pick another element to slide.
+\i (00:27:22) pick grid 1844.6521 879.6601
+\t (00:27:22) last pick:  1840.0000 880.0000
+\t (00:27:22) last pick:  1844.6521 890.0000
+\t (00:27:22) Waiting for the destination pick.
+\i (00:27:23) pick grid 1826.4961 854.2417
+\t (00:27:23) last pick:  1830.0000 850.0000
+\t (00:27:23) No DRC errors detected.
+\t (00:27:23) Pick another element to slide.
+\i (00:27:24) pick grid 1877.3329 852.4261
+\t (00:27:24) last pick:  1880.0000 850.0000
+\t (00:27:24) last pick:  1870.0000 850.0000
+\t (00:27:24) Waiting for the destination pick.
+\i (00:27:25) pick grid 1862.8081 821.5609
+\t (00:27:25) last pick:  1860.0000 820.0000
+\t (00:27:25) No DRC errors detected.
+\t (00:27:25) Pick another element to slide.
+\i (00:27:26) pick grid 1686.6947 854.2417
+\t (00:27:26) last pick:  1690.0000 850.0000
+\t (00:27:26) last pick:  1686.6947 850.0000
+\t (00:27:26) Waiting for the destination pick.
+\i (00:27:28) pick grid 1684.8791 865.1353
+\t (00:27:28) last pick:  1680.0000 870.0000
+\t (00:27:28) No DRC errors detected.
+\t (00:27:28) Pick another element to slide.
+\i (00:27:29) pick grid 1884.5953 690.8375
+\t (00:27:29) last pick:  1880.0000 690.0000
+\t (00:27:29) last pick:  1890.0000 690.8375
+\t (00:27:29) Waiting for the destination pick.
+\i (00:27:32) pick grid 1906.3826 694.4687
+\t (00:27:32) last pick:  1910.0000 690.0000
+\t (00:27:32) No DRC errors detected.
+\t (00:27:32) Pick another element to slide.
+\i (00:27:33) pick grid 1904.5670 819.7453
+\t (00:27:33) last pick:  1900.0000 820.0000
+\t (00:27:33) last pick:  1910.0000 819.7453
+\t (00:27:33) Waiting for the destination pick.
+\i (00:27:35) pick grid 1884.5953 814.2984
+\t (00:27:35) last pick:  1880.0000 810.0000
+\t (00:27:35) No DRC errors detected.
+\t (00:27:35) Pick another element to slide.
+\i (00:27:37) pick grid 1879.1485 810.6672
+\t (00:27:37) last pick:  1880.0000 810.0000
+\t (00:27:37) last pick:  1880.0000 810.6672
+\t (00:27:37) Waiting for the destination pick.
+\i (00:27:39) pick grid 1886.4110 810.6672
+\t (00:27:39) last pick:  1890.0000 810.0000
+\t (00:27:39) No DRC errors detected.
+\t (00:27:39) Pick another element to slide.
+\i (00:27:44) pick grid 608.2271 814.2984
+\t (00:27:44) last pick:  610.0000 810.0000
+\t (00:27:44) last pick:  608.2271 825.0000
+\t (00:27:44) Waiting for the destination pick.
+\i (00:27:47) pick grid 613.6740 836.0857
+\t (00:27:47) last pick:  610.0000 840.0000
+\t (00:27:47) No DRC errors detected.
+\t (00:27:47) Pick another element to slide.
+\i (00:27:47) pick grid 655.4328 792.5112
+\t (00:27:47) last pick:  660.0000 790.0000
+\t (00:27:48) Pick element to slide.
+\i (00:27:53) pick grid 1864.6237 874.2133
+\t (00:27:53) last pick:  1860.0000 870.0000
+\t (00:27:53) last pick:  1870.1964 879.8036
+\t (00:27:53) Waiting for the destination pick.
+\i (00:27:54) pick grid 1862.8081 863.3197
+\t (00:27:54) last pick:  1860.0000 860.0000
+\t (00:27:54) No DRC errors detected.
+\t (00:27:54) Pick another element to slide.
+\i (00:27:55) pick grid 1862.8081 856.0573
+\t (00:27:55) last pick:  1860.0000 860.0000
+\t (00:27:55) last pick:  1863.3897 856.6103
+\t (00:27:55) Waiting for the destination pick.
+\i (00:27:56) pick grid 1868.2549 854.2417
+\t (00:27:56) last pick:  1870.0000 850.0000
+\t (00:27:56) No DRC errors detected.
+\t (00:27:56) Pick another element to slide.
+\i (00:28:01) zoom out 1 
+\i (00:28:01) setwindow pcb
+\i (00:28:01) zoom out 1516.0281 9.9868
+\i (00:28:01) trapsize 181560
+\i (00:38:01) trapsize 129778
+\i (00:38:07) zoom out 1 
+\i (00:38:08) setwindow pcb
+\i (00:38:08) zoom out 1117.2754 -365.1212
+\i (00:38:08) trapsize 259557
+\i (00:38:08) zoom out 1 
+\i (00:38:08) setwindow pcb
+\i (00:38:08) zoom out 417.3614 -427.4147
+\i (00:38:08) trapsize 501437
+\i (00:38:09) zoom in 1 
+\i (00:38:09) setwindow pcb
+\i (00:38:09) zoom in -977.8023 -596.7101
+\i (00:38:09) trapsize 250719
+\i (00:38:10) zoom in 1 
+\i (00:38:10) setwindow pcb
+\i (00:38:10) zoom in -315.9054 65.1868
+\i (00:38:10) trapsize 125359
+\i (00:38:21) xNet -10V 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet +10V 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet Square 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet Dc 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes U2 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N41488 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes U6 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes Ls1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R7 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R2 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes C1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes U1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes U1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes D1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet 0 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes D2 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N41492 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N41506 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N41530 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N41520 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet Buzzer 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N41862 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet Ref 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes D4 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes D5 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R18 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet Temp 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R12 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N42178 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N42252 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R17 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R13 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R16 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R19 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes D6 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N42450 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R11 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet Ac 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xNet N42584 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R8 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R3 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R10 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet Led 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R6 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes Q1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R9 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N44906 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes U4 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes R5 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N58789 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R4 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N59014 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R14 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N59102 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes R15 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes D3 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xrefdes J1 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N50399 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes U5 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N50887 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xrefdes U3 
+\t (00:38:21) Symbol and Component Instances are not selectable at this time.
+\i (00:38:21) xNet N51379 
+\t (00:38:21) Nets are not selectable at this time.
+\i (00:38:21) xname_flush 
+\i (00:39:48) status 
+\i (00:42:33) setwindow form.status
+\i (00:42:33) FORM status done  
+\i (00:43:58) setwindow pcb
+\i (00:43:58) silkscreen param 
+\i (00:44:20) setwindow form.autosilk
+\i (00:44:20) FORM autosilk done  
+\i (00:44:21) setwindow pcb
+\i (00:44:21) silkscreen execute 
+\i (00:44:34) generaledit 
+\i (00:44:53) silkscreen param 
+\i (00:45:38) setwindow form.autosilk
+\i (00:45:38) FORM autosilk close  
+\i (00:45:38) setwindow pcb
+\i (00:45:38) generaledit 
+\i (01:06:21) save 
+\i (01:06:24) fillin yes 
+\i (01:06:25) generaledit 
+\i (01:06:27) exit 
+\t (01:06:30)     Journal end - Sat Jul 13 02:02:56 2019

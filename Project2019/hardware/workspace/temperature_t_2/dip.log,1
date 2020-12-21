@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : dip.dra                                       )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Thu Jul 04 11:10:06 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Workspace/Cadence/temperature_t
+    Name      = dip.psm
+    User      = isaac
+    Machine   = VIRTUAL
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

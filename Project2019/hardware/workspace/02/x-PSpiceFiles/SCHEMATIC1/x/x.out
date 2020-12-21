@@ -1,0 +1,381 @@
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "x.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x\x_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+
+**** INCLUDING x_profile.inc ****
+.LIB    ".\tmp20.lib" 
+
+**** RESUMING x.cir ****
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000 0 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source X
+R_R19         N29190 TEMPERATURE  30.2k TC=0,0 
+X_U9         N29184 N29190 +10V -10V TEMPERATURE LM741
+X_U7         0 TMP20 REFERENCE T TMP20 
+R_R18         0 N29190  20k TC=0,0 
+R_R20         TMP20 N29184  100k TC=0,0 
+V_V7         +10V 0 10Vdc
+V_V10         T 0  AC 0
++SIN 40 10 .001 0 0 0
+V_V6         -10V 0 -10Vdc
+V_V8         REFERENCE 0 3.5Vdc
+
+**** RESUMING x.cir ****
+.END
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.DL         X_U7.DVN        X_U7.DIN        X_U7.DD         
+          IS    9.500000E-12  100.000000E-18   10.000000E-15   10.000000E-15 
+           N    1.63                                                         
+         XTI    1.5                                                          
+          KF                   70.000000E-15                                 
+
+
+               X_U7.DE         X_U9.x_lm741.dx X_U9.x_lm741.dy 
+          IS   30.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1               1.000000E-03 
+         CJO                                   10.000000E-12 
+
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.QPL        X_U7.QNL        X_U9.x_lm741.qx 
+               PNP             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  100.000000E-18  100.000000E-18  800.000000E-18 
+          BF  100             100              93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.2             2.42            2.42         
+           D     .52             .87             .87         
+
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.JC         
+               NJF             
+         VTO   -2            
+        BETA  100.000000E-06 
+          IS    1.000000E-18 
+
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U7.PSD        X_U7.POUT       X_U7.NOUT       X_U7.PIN        
+               PMOS            PMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    -.5             -.7              .7             -.35         
+          KP  200.000000E-06  200.000000E-06  200.000000E-06  200.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS    1.000000E-18   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_U7.NIN        X_U7.PINT       
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .35            -.35         
+          KP  200.000000E-06  200.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0                .01         
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    T)   40.0000  ( +10V)   10.0000  ( -10V)  -10.0000  (TMP20)    1.3991      
+
+(N29184)    1.3911 (N29190)    1.3911 (X_U7.1)   39.9600 (X_U7.6)     .6096     
+
+(X_U7.7) 489.9E-06 (X_U7.8)    0.0000 (X_U7.9)    1.0637 (X_U7.10)    1.0637    
+
+(X_U7.11)    1.0637                   (X_U7.12) 489.9E-06                       
+
+(X_U7.13)    3.4994                   (X_U7.14)    3.4994                       
+
+(X_U7.15)    3.4999                   (X_U7.16)    3.5000                       
+
+(X_U7.17) 48.99E-06                   (X_U7.18)    1.7497                       
+
+(X_U7.19)    1.7497                   (X_U7.20)    3.4999                       
+
+(X_U7.21)    3.5000                   (X_U7.22) 50.00E-06                       
+
+(X_U7.23)    1.3991                   (X_U7.24)     .5955                       
+
+(X_U7.25)     .5955                   (X_U7.26)     .7147                       
+
+(X_U7.27)     .7147                   (X_U7.28)     .6996                       
+
+(X_U7.29)     .6996                   (X_U7.30)     .6996                       
+
+(X_U7.31)     .6996                   (X_U7.32)    1.7500                       
+
+(X_U7.33)    1.7500                   (X_U7.34)   -1.7500                       
+
+(X_U7.35)     .6996                   (X_U7.36)     .6996                       
+
+(X_U7.37) 175.0E-06                   (X_U7.38)-175.0E-06                       
+
+(X_U7.39) 69.95E-06                   (X_U7.40)     .6991                       
+
+(X_U7.41)     .6991                   (X_U7.42)     .6996                       
+
+(X_U7.43)     .6996                   (X_U7.44)     .6993                       
+
+(X_U7.45)    1.7497                   (X_U7.46)    1.3991                       
+
+(X_U7.47)     .7314                   (X_U7.48)    1.3992                       
+
+(X_U7.49)    2.7935                   (X_U7.50)    2.7938                       
+
+(X_U7.51) 429.4E-06                   (X_U7.52)     .6996                       
+
+(X_U7.53) 428.6E-06                   (X_U7.54)     .7317                       
+
+(X_U7.55)    2.7935                   (X_U7.56)     .7314                       
+
+(X_U7.57)    1.7500                   (X_U7.58)    2.9141                       
+
+(X_U7.59)    3.5000                   (X_U7.60)     .6996                       
+
+(X_U7.61)    2.2154                   (X_U7.62)    2.2154                       
+
+(X_U7.63)    3.5000                   (X_U7.64)    2.2154                       
+
+(X_U7.65)     .3500                   (X_U7.66)    2.1300                       
+
+(X_U7.67)    1.0637                   (X_U7.68)    1.0637                       
+
+(X_U7.69)    3.1437                   (X_U7.70)    1.7500                       
+
+(X_U7.71)    3.2000                   (X_U7.72)     .3000                       
+
+(X_U7.73)    1.7500                   (X_U7.74)    1.7500                       
+
+(X_U7.75)    0.0000                   (X_U7.76)    2.3466                       
+
+(X_U7.77)  -31.3360                   (X_U7.78)     .7314                       
+
+(X_U7.79)    2.7935                   (X_U7.80)     .0051                       
+
+(X_U7.81)     .6551                   (X_U7.82)     .6991                       
+
+(X_U7.83)    1.3982                   (X_U7.84)    1.4044                       
+
+(X_U7.85)    1.8639                   (X_U7.86)     .0013                       
+
+(X_U7.87)    3.0000                   (X_U7.88)    0.0000                       
+
+(X_U7.89)   40.0000                   (X_U7.90)    -.0035                       
+
+(REFERENCE)    3.5000                 (TEMPERATURE)    3.4940                   
+
+(X_U9.x_lm741.6)-330.3E-06            (X_U9.x_lm741.7)    3.4975                
+
+(X_U9.x_lm741.8)    3.4975            (X_U9.x_lm741.9)    0.0000                
+
+(X_U9.x_lm741.10)     .7831           (X_U9.x_lm741.11)    9.9601               
+
+(X_U9.x_lm741.12)    9.9600           (X_U9.x_lm741.13)     .7971               
+
+(X_U9.x_lm741.14)     .7971           (X_U9.x_lm741.53)    9.0000               
+
+(X_U9.x_lm741.54)   -9.0000           (X_U9.x_lm741.90)     .0696               
+
+(X_U9.x_lm741.91)   40.0000           (X_U9.x_lm741.92)  -40.0000               
+
+(X_U9.x_lm741.99)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V7        -1.116E-03
+    V_V10       -4.000E-08
+    V_V6         1.116E-03
+    V_V8        -2.768E-06
+    X_U7.V27     0.000E+00
+    X_U7.V28     0.000E+00
+    X_U7.V29     0.000E+00
+    X_U7.V30     3.300E-07
+    X_U7.V33     5.099E-09
+    X_U7.V43     0.000E+00
+    X_U7.V45     1.000E-11
+    X_U7.V46     1.598E-12
+    X_U7.V48    -1.398E-06
+    X_U7.V143   -1.250E-11
+    X_U9.x_lm741.vb  -3.303E-09
+    X_U9.x_lm741.vc   5.507E-12
+    X_U9.x_lm741.ve   1.259E-11
+    X_U9.x_lm741.vlim   6.963E-05
+    X_U9.x_lm741.vlp  -3.993E-11
+    X_U9.x_lm741.vln  -4.007E-11
+
+    TOTAL POWER DISSIPATION   2.23E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/01/19 10:00:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-x"  [ C:\Workspace\Cadence\02\x-PSpiceFiles\SCHEMATIC1\x.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =         .52
+  Total job time (using Solver 1)   =         .56
+

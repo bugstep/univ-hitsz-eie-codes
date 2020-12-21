@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : cha.dra                                       )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Tue Jul 16 09:41:05 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = C:/Workspace/Cadence/03_t
+    Name      = cha.psm
+    User      = isaac
+    Machine   = VIRTUAL
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

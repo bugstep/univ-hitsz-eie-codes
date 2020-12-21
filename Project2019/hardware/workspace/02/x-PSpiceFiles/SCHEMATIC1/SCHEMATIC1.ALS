@@ -1,0 +1,18 @@
+.ALIASES
+R_R19           R19(1=N29190 2=TEMPERATURE ) CN @X.SCHEMATIC1(sch_1):INS29240@ANALOG.R.Normal(chips)
+X_U9            U9(+=N29184 -=N29190 V+=+10V V-=-10V OUT=TEMPERATURE ) CN @X.SCHEMATIC1(sch_1):INS29144@OPAMP.LM741.Normal(chips)
+X_U7            U7(2=0 3=TMP20 4=REFERENCE 5=T ) CN @X.SCHEMATIC1(sch_1):INS29334@TMP20.TMP20.Normal(chips)
+R_R18           R18(1=0 2=N29190 ) CN @X.SCHEMATIC1(sch_1):INS29218@ANALOG.R.Normal(chips)
+R_R20           R20(1=TMP20 2=N29184 ) CN @X.SCHEMATIC1(sch_1):INS29280@ANALOG.R.Normal(chips)
+V_V7            V7(+=+10V -=0 ) CN @X.SCHEMATIC1(sch_1):INS29641@SOURCE.VDC.Normal(chips)
+V_V10           V10(+=T -=0 ) CN @X.SCHEMATIC1(sch_1):INS29587@SOURCE.VSIN.Normal(chips)
+V_V6            V6(+=-10V -=0 ) CN @X.SCHEMATIC1(sch_1):INS29619@SOURCE.VDC.Normal(chips)
+V_V8            V8(+=REFERENCE -=0 ) CN @X.SCHEMATIC1(sch_1):INS29703@SOURCE.VDC.Normal(chips)
+_    _(+10V=+10V)
+_    _(-10V=-10V)
+_    _(Gnd=0)
+_    _(reference=REFERENCE)
+_    _(T=T)
+_    _(temperature=TEMPERATURE)
+_    _(tmp20=TMP20)
+.ENDALIASES

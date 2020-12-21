@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-t"  [ C:\Workspace\Cadence\temperature_1_2\t-pspicefiles\schematic1\t.sim ] 
+
+** Creating circuit file "t.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Workspace\Cadence\temperature_1_2\t-pspicefiles\schematic1\t\t_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m  0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

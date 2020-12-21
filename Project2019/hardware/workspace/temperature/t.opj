@@ -1,0 +1,211 @@
+(ExpressProject "t"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\t.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\t-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\t-pspicefiles\schematic1\t.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\t-pspicefiles\schematic1\t.sim"
+        (DisplayName "SCHEMATIC1-t")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (File ".\tmp20.lib"
+        (DisplayName ".\tmp20.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TMP20
+      (FullPartName "TMP20.Normal")
+      (LibraryName "C:\WORKSPACE\CADENCE\TEMPERATURE\TMP20.OLB")
+      (DeviceIndex "0"))
+    (LP_M675-TYP
+      (FullPartName "LP_M675-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_MINITOPLED.OLB")
+      (DeviceIndex "0"))
+    (R_var
+      (FullPartName "R_var.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (1N3070
+      (FullPartName "1N3070.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DI.OLB")
+      (DeviceIndex "0"))
+    (1N4621
+      (FullPartName "1N4621.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DIZ.OLB")
+      (DeviceIndex "0"))
+    (2N6718
+      (FullPartName "2N6718.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (2N3440
+      (FullPartName "2N3440.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (1N4683
+      (FullPartName "1N4683.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (1N4617
+      (FullPartName "1N4617.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DIZ.OLB")
+      (DeviceIndex "0"))
+    (2N2222A
+      (FullPartName "2N2222A.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (1N4371A
+      (FullPartName "1N4371A.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DIZ.OLB")
+      (DeviceIndex "0"))
+    (1N4630
+      (FullPartName "1N4630.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DIZ.OLB")
+      (DeviceIndex "0"))
+    (1N4646
+      (FullPartName "1N4646.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\DIZ.OLB")
+      (DeviceIndex "0"))
+    (2N2222
+      (FullPartName "2N2222.Normal")
+      (LibraryName
+         "C:\CADENCE\CADENCE_SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (1N4684
+      (FullPartName "1N4684.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (1N4620
+      (FullPartName "1N4620.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (LM741
+      (FullPartName "LM741.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Workspace\Cadence\temperature\t.dsn")
+      (Path "Design Resources" "C:\Workspace\Cadence\temperature\t.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 497"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 564")
+        (Scroll "0 85")
+        (Zoom "174")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "wave"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1766 130 590")
+        (Scroll "0 742")
+        (Zoom "270")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "func"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1792 156 616")
+        (Scroll "130 0")
+        (Zoom "270")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "base"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1818 182 642")
+        (Scroll "-139 69")
+        (Zoom "135")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "cmp1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1844 208 668")
+        (Scroll "130 910")
+        (Zoom "270")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "cmp2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 312 2194 312 1002")
+        (Scroll "-262 0")
+        (Zoom "135")
+        (Occurrence "/"))
+      (Path "C:\WORKSPACE\CADENCE\TEMPERATURE\T.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "temp")))
+  (MPSSessionName "isaac")
+  (LastUsedLibraryBrowseDirectory "C:\Workspace\Cadence\temperature")
+  (ISPCBBASICLICENSE "false"))

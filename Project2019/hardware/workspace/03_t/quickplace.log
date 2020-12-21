@@ -1,0 +1,51 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : dsbssb.brd                                    )
+(    Software Version : 16.6-2015S112                                 )
+(    Date/Time        : Tue Jul 16 09:41:39 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  U4 / AD633/AD_SOIC8_AD633/AD / SOIC8 at (-1851.5000 1108.0000)
+         Placed symbol:  U2 / NE5532_SOIC8_NE5532 / SOIC8 at (-1562.5000 1108.0000)
+         Placed symbol:  U3 / NE5532_SOIC8_NE5532 / SOIC8 at (-1273.5000 1108.0000)
+         Placed symbol:  U1 / MAX291/SO8_SOIC8_MAX291/SO8 / SOIC8 at (-984.5000 1108.0000)
+         Placed symbol:  C7 / C_0805_10U / 0805 at (-745.4490 1055.2400)
+         Placed symbol:  C2 / C_0805_0.1U / 0805 at (-552.4100 1055.2400)
+         Placed symbol:  C4 / C_0805_0.1U / 0805 at (-359.3710 1055.2400)
+         Placed symbol:  C8 / C_0805_0.1U / 0805 at (-166.3320 1055.2400)
+         Placed symbol:  C5 / C_0805_10U / 0805 at (26.7070 1055.2400)
+         Placed symbol:  C6 / C_0805_0.1U / 0805 at (219.7460 1055.2400)
+         Placed symbol:  C3 / C_0805_10U / 0805 at (412.7850 1055.2400)
+         Placed symbol:  C1 / C_0805_10U / 0805 at (605.8240 1055.2400)
+         Placed symbol:  R5 / R_0805_1K / 0805 at (798.8630 1055.2400)
+         Placed symbol:  R1 / R_0805_9K / 0805 at (991.9020 1055.2400)
+         Placed symbol:  R2 / R_0805_1K / 0805 at (1184.9410 1055.2400)
+         Placed symbol:  R3 / R_0805_1K / 0805 at (1377.9800 1055.2400)
+         Placed symbol:  R9 / R_0805_1K / 0805 at (1571.0190 1055.2400)
+         Placed symbol:  R8 / R_0805_1K / 0805 at (1764.0580 1055.2400)
+         Placed symbol:  R7 / R_0805_1K / 0805 at (-1901.4490 1263.2400)
+         Placed symbol:  R6 / R_0805_1K / 0805 at (-1708.4100 1263.2400)
+         Placed symbol:  R4 / R_0805_4K / 0805 at (-1515.3710 1263.2400)
+         Placed symbol:  J5 / CHA_CHA_CHA / CHA at (-1357.8830 1271.0000)
+         Placed symbol:  J4 / CHA_CHA_CHA / CHA at (-1239.8830 1271.0000)
+         Placed symbol:  J6 / CHA_CHA_CHA / CHA at (-1121.8830 1271.0000)
+         Placed symbol:  J9 / CHA_CHA_CHA / CHA at (-1003.8830 1271.0000)
+         Placed symbol:  J8 / CHA_CHA_CHA / CHA at (-885.8830 1271.0000)
+         Placed symbol:  J2 / CHA_CHA_CHA / CHA at (-767.8830 1271.0000)
+         Placed symbol:  J3 / CHA_CHA_CHA / CHA at (-649.8830 1271.0000)
+         Placed symbol:  J11 / CHA_CHA_CHA / CHA at (-531.8830 1271.0000)
+         Placed symbol:  J10 / CHA_CHA_CHA / CHA at (-413.8830 1271.0000)
+         Placed symbol:  J1 / CHA_CHA_CHA / CHA at (-295.8830 1271.0000)
+         Placed symbol:  J7 / CHA_CHA_CHA / CHA at (-177.8830 1271.0000)
+
+
+Placed 32 of 32 applicable (32 total) symbols.
+
+-----------------------------------------------------------------------
+

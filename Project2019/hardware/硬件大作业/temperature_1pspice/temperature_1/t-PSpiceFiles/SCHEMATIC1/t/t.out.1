@@ -1,0 +1,83 @@
+
+**** 07/02/19 18:26:41 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-t"  [ D:\QQ\740167442\FileRecv\temperature_1\t-pspicefiles\schematic1\t.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "t.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "D:\QQ\740167442\FileRecv\temperature_1\t-pspicefiles\schematic1\t\t_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+
+**** INCLUDING t_profile.inc ****
+.LIB    ".\tmp20.lib" 
+
+**** RESUMING t.cir ****
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source T
+D_D2         0 N394881 D1N4617 
+R_R23         0 N38492  100k TC=0,0 
+X_D7         0 N39686 awb1n4621 PARAMS:               
+R_R10         N39556 N39372  10k TC=0,0 
+R_R6         N39032 N39020  330 TC=0,0 
+R_R7         N39692 N39686  1k TC=0,0 
+V_V7         +10V 0 10Vdc
+X_U5A         N39006 N39002 +10V -10V N39032 LM2904/ON
+D_D9         N39278 0 LP_M675-TYP 
+D_D5         N39020 N39042 D1N5819/ON 
+R_R12         0 N39198  16 TC=0,0 
+R_R3         N39020 N39002  1.25k TC=0,0 
+X_U10         N38492 N38498 +10V -10V N38520 LM741
+R_R22         N38498 N43978  33k TC=0,0 
+R_R13         N39278 N392620  20 TC=0,0 
+R_R4         N39006 N43647  9.1k TC=0,0 
+V_V6         -10V 0 -10Vdc
+V_V12         TESTWAVE 0  AC 0
++SIN 3.5 0.3 100 0 0 0
+X_Q2         +10V N39228 N392620 awb2n2222a PARAMS:                            
++                 
+R_R21         -10V N38498  100k TC=0,0 
+C_C1         0 N39002  0.1u  TC=0,0 
+X_U11B         N39042 N39072 +10V -10V N39072 LM2904/ON
+X_U1         N39366 N39372 +10V -10V N39228 LM741
+R_R11         N38520 N39366  390 TC=0,0 
+X_U6         N39228 N39072 +10V -10V N39692 LM741
+R_R5         N39006 N39020  100k TC=0,0 
+X_Q1         +10V N39686 N39198 awb2n2222a PARAMS:                             
++                
+D_D1         N39228 N394881 D1N4617 
+X_D6         0 N39042 1n5231/ON
+V_V13         N39556 0  AC 0
++SIN 3.5 0.06 100 0 0 0
+R_R24         N39366 N39228  56k TC=0,0 
+R_R25         N43647 0  130k TC=0,0 
+R_R26         N43978 N38520  2.4k TC=0,0 
+R_R27         N39278 N44073  39 TC=0,0 
+
+**** RESUMING t.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N44073.
+

@@ -1,0 +1,10 @@
+ lib="c:\users\hp\documents\tencent files\740167442\filerecv\temperature_1pspice\temperature_1\t-PSpiceFiles\SCHEMATIC1\t\tmp20.lib", offset=1915, size=3921
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\diode.lib, offset=582727, size=326
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\diode.lib, offset=581990, size=314
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\on_diode.lib, offset=19068, size=170
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\on_diode.lib, offset=6539, size=1214
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\osram_minitopled.lib, offset=21609, size=1462
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\on_amp.lib, offset=12419, size=1097
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\opamp.lib, offset=58704, size=430
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\bjn.lib, offset=17650, size=1376
+ lib=C:\Cadence\SPB_16.6\tools\PSpice\Library\opamp.lib, offset=101320, size=1093

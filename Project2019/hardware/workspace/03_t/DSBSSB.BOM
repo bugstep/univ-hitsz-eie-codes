@@ -1,0 +1,23 @@
+  Revised: Tuesday, July 16, 2019
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials           July 16,2019      9:25:06	Page1
+
+Item	Quantity	Reference	Part	{PCB Footprint}
+______________________________________________
+
+1	4	C1,C3,C5,C7	10u	0805
+2	4	C2,C4,C6,C8	0.1u	0805
+3	11	J1,J2,J3,J4,J5,J6,J7,J8,J9,J10,J11	cha	cha
+4	1	R1	9k	0805
+5	7	R2,R3,R5,R6,R7,R8,R9	1k	0805
+6	1	R4	4k	0805
+7	1	U1	MAX291/SO8	soic8
+8	2	U2,U3	NE5532	soic8
+9	1	U4	AD633/AD	soic8

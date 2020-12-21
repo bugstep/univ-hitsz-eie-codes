@@ -1,0 +1,28 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Unplaced Symbol Availability Check                               )
+(                                                                     )
+(    Drawing          : temperature.brd                               )
+(    Software Version : 16.6-2015S112                                 )
+(    Date/Time        : Mon Jul 08 11:28:28 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Current PSMPATH consists of:
+	.
+	symbols
+	..
+	../symbols
+	C:/Cadence/Cadence_SPB_16.6/share/local/pcb/symbols
+	C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols
+	C:/Cadence/Cadence_SPB_16.6/share/pcb/allegrolib/symbols
+	C:/Workspace/Cadence/temperature_t/FZ/
+
+
+All Symbols Found
+
+Total symbols placed:      34 out of 35
+
+
+Symbol Found:  U1	- C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols/soic8.psm

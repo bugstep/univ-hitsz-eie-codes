@@ -1,0 +1,367 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 16.6.0 d001Jul-08-2019 at 09:59:26 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='TEMPERATURE';
+ POST_TIME='Feb 15 2016 19:53:59';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'C_0805_0.1U':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41354@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41354@analog.\c.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41354@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'D1N5819/ON_1_DO41-1_D1N5819/ON':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41444@TEMPERATURE.D1N5819/ON_1.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41444@temperature.\d1n5819/on_1.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41444@temperature.\d1n5819/on_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 '1N5231/ON_0_DO35-1_1N5231/ON':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41464@TEMPERATURE.1N5231/ON_0.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41464@temperature.\1n5231/on_0.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41464@temperature.\1n5231/on_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 '1N4099_0_DO35-1_1N4099':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS60303@TEMPERATURE.1N4099_0.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins60303@temperature.\1n4099_0.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins60303@temperature.\1n4099_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 '1N4617_0_DO35-1_1N4617':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41968@TEMPERATURE.1N4617_0.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41968@temperature.\1n4617_0.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41968@temperature.\1n4617_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 '1N4617_0_DO35-1_1N4617':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41990@TEMPERATURE.1N4617_0.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41990@temperature.\1n4617_0.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41990@temperature.\1n4617_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'LP_A676-TYP_FG_LP_A676-TYP':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS68329@OSRAM_SIDELED.LP_A676-TYP.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins68329@osram_sideled.\lp_a676-typ.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins68329@osram_sideled.\lp_a676-typ.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'HEADER 10_SIP_HEADER 10':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS61703@CONNECTOR.HEADER 10.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins61703@connector.\header 10.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins61703@connector.\header 10.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ LS1 'BUZZER_FMQ_BUZZER':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS53602@ELECTROMECHANICAL.BUZZER.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins53602@electromechanical.\buzzer.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins53602@electromechanical.\buzzer.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ Q1 '2N2222A_TO18_2N2222A':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS69184@BJN.2N2222A.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins69184@bjn.\2n2222a.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins69184@bjn.\2n2222a.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'R_0805_4.7K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42874@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42874@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42874@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'R_0805_100K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42654@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42654@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42654@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'R_0805_390':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42474@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42474@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42474@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'R_0805_1.8K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42154@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42154@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42154@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'R_0805_30K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42300@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42300@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42300@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'R_0805_200':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS59073@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins59073@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins59073@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'R_0805_1.8K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS60172@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins60172@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins60172@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'R_0805_100K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42336@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42336@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42336@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'R_0805_20K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42278@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42278@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42278@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'R_0805_10K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42024@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42024@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42024@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'R_0805_56':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS68291@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins68291@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins68291@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'R_0805_330':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41334@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41334@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41334@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R3 'R_0805_33K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42632@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42632@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42632@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R4 'R_0805_2.4K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS58985@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins58985@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins58985@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'R_0805_130K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS58640@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins58640@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins58640@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'R_0805_9.1K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42896@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42896@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42896@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'R_0805_100K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41314@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41314@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41314@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'R_0805_100K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS42610@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins42610@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins42610@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'R_0805_56K':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS56867@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins56867@analog.\r.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins56867@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'LM2904/ON_SOIC8_LM2904/ON':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41370@ON_AMP.LM2904/ON.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41370@on_amp.\lm2904/on.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41370@on_amp.\lm2904/on.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='A';
+
+SECTION_NUMBER 2
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS41404@ON_AMP.LM2904/ON.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins41404@on_amp.\lm2904/on.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins41404@on_amp.\lm2904/on.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='B';
+
+PART_NAME
+ U2 'LM741_1_SOIC8_LM741_1':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS52071@LIBRARY.LM741_1.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins52071@\library\.\lm741_1.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins52071@\library\.\lm741_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U3 'LM741_1_SOIC8_LM741_1':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS50911@LIBRARY.LM741_1.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins50911@\library\.\lm741_1.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins50911@\library\.\lm741_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U4 'TMP20_0_SC70_TMP20':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS71263@TEMPERATURE.TMP20_0.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins71263@temperature.\tmp20_0.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins71263@temperature.\tmp20_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U5 'LM741_1_SOIC8_LM741_1':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS50423@LIBRARY.LM741_1.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins50423@\library\.\lm741_1.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins50423@\library\.\lm741_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U6 'LM741_1_SOIC8_LM741_1':;
+
+SECTION_NUMBER 1
+ '@TEMPERATURE.SCHEMATIC1(SCH_1):INS52646@LIBRARY.LM741_1.NORMAL(CHIPS)':
+ C_PATH='@temperature.schematic1(sch_1):ins52646@\library\.\lm741_1.normal\(chips)',
+ P_PATH='@temperature.schematic1(sch_1):page1_ins52646@\library\.\lm741_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

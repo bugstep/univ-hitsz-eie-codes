@@ -1,0 +1,80 @@
+\t (00:00:18) allegro 16.6-2015 S112 (v16-6-112JB) Windows 32
+\t (00:00:18)     Journal start - Tue Jul 16 09:27:15 2019
+\t (00:00:18)         Host=VIRTUAL User=isaac Pid=2392 CPUs=4
+\t (00:00:18) CmdLine= C:\Cadence\Cadence_SPB_16.6\tools\pcb\bin\allegro.exe
+\t (00:00:18) 
+\t (00:00:21) Opening existing design...
+\d (00:00:21) Design opened: C:/Workspace/Cadence/temperature_t_2/temperature.brd
+\i (00:00:22) trapsize 171633
+\i (00:00:22) trapsize 168548
+\i (00:00:23) trapsize 172158
+\i (00:00:23) trapsize 175378
+\i (00:00:23) trapsize 181560
+\i (00:00:25) generaledit 
+\i (00:00:34) new 
+\i (00:00:44) newdrawfillin "cha.dra" "Package Symbol (Wizard)"
+\t (00:00:45) Starting new design...
+\i (00:00:46) trapsize 363573
+\i (00:00:46) trapsize 355809
+\i (00:00:46) trapsize 363573
+\i (00:00:47) trapsize 315228
+\i (00:00:47) trapsize 726241
+\i (00:00:47) trapsize 726241
+\i (00:00:47) package symbol wizard 
+\i (00:00:49) generaledit 
+   (00:00:54) Loading cmds.cxt 
+   (00:00:54) Loading axlcore.cxt 
+\i (00:00:54) setwindow form.sym_wizard
+\i (00:00:54) FORM sym_wizard sip YES 
+\i (00:00:58) FORM sym_wizard zip YES 
+\i (00:01:00) FORM sym_wizard sip YES 
+\i (00:01:01) FORM sym_wizard bga YES 
+\i (00:01:01) FORM sym_wizard plcc YES 
+\i (00:01:03) FORM sym_wizard rca_th YES 
+\i (00:01:03) FORM sym_wizard rca_smd YES 
+\i (00:01:05) FORM sym_wizard plcc YES 
+\i (00:01:06) FORM sym_wizard soic YES 
+\i (00:01:07) FORM sym_wizard sip YES 
+\i (00:01:08) FORM sym_wizard wiz_next  
+\i (00:01:11) FORM sym_wizard load_template  
+\t (00:01:11) Opening existing design...
+\i (00:01:13) fillin yes 
+\t (00:01:13) Grids are drawn 200, 200 apart for enhanced viewability.
+\i (00:01:13) setwindow pcb
+\i (00:01:13) trapsize 212
+\d (00:01:13) Design opened: C:/Cadence/Cadence_SPB_16.6/share/pcb/pcb_lib/symbols/template/sym_template.dra
+\i (00:01:20) setwindow form.sym_wizard
+\i (00:01:20) FORM sym_wizard cancel  
+\t (00:01:20) Starting new design...
+\i (00:01:21) setwindow pcb
+\i (00:01:21) trapsize 119
+\i (00:01:21) trapsize 117
+\i (00:01:21) trapsize 119
+\i (00:01:22) trapsize 137
+\t (00:01:22) Grids are drawn 800, 800 apart for enhanced viewability.
+\i (00:01:22) trapsize 212
+\i (00:01:22) trapsize 212
+\i (00:01:23) generaledit 
+\i (00:01:25) open 
+\e (00:01:25) Do you want to save the changes you made to cha?
+\i (00:01:28) fillin no 
+\i (00:02:04) fillin "menu_cancel"
+\i (00:02:05) generaledit 
+\i (00:03:31) xhilite 
+\i (00:03:31) xname_flush 
+\i (00:03:31) done 
+\i (00:03:31) generaledit 
+\i (00:03:39) open 
+\e (00:03:40) Do you want to save the changes you made to cha?
+\i (00:03:41) fillin no 
+\i (00:03:44) fillin "temperature.brd"
+\t (00:03:44) Opening existing design...
+\i (00:03:44) trapsize 181560
+\d (00:03:44) Design opened: C:/Workspace/Cadence/temperature_t_2/temperature.brd
+\i (00:03:44) generaledit 
+\i (00:03:46) open 
+\i (00:03:51) fillin "C:\Workspace\Cadence\03_t\dsbssb.brd"
+\i (00:03:51) cd "C:\Workspace\Cadence\03_t"
+\t (00:03:51) Opening existing design...
+\i (00:03:51) trapsize 10585
+\t (00:03:51)     Journal end - Tue Jul 16 09:30:48 2019

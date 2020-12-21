@@ -1,0 +1,224 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        08/26/2014  15:05:13  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO 7219_3 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  7219_3 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         ?DT?_WRITE_MAX7219?MAIN
+            DATA    000DH     0003H     UNIT         _DATA_GROUP_
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0087H     UNIT         ?PR?INIT_MAX7219?MAIN
+            CODE    0887H     0080H     UNIT         ?CO?MAIN
+            CODE    0907H     0058H     UNIT         ?PR?MAIN?MAIN
+            CODE    095FH     0020H     UNIT         ?PR?_DELAY_XMS?MAIN
+            CODE    097FH     001CH     UNIT         ?PR?_WRITE_MAX7219?MAIN
+            CODE    099BH     0011H     UNIT         ?PR?_WRITE_MAX7219_BYTE?MAIN
+            CODE    09ACH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   7219_3 (MAIN)
+
+
+SEGMENT                                DATA_GROUP 
+  +--> CALLED SEGMENT                START    LENGTH
+----------------------------------------------------
+?C_C51STARTUP                        -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                        000DH    0002H
+  +--> ?PR?_DELAY_XMS?MAIN
+  +--> ?PR?INIT_MAX7219?MAIN
+  +--> ?PR?_WRITE_MAX7219_BYTE?MAIN
+  +--> ?CO?MAIN
+
+?PR?INIT_MAX7219?MAIN                000FH    0001H
+  +--> ?PR?_WRITE_MAX7219_BYTE?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  7219_3 (MAIN)
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/26/2014  15:05:13  PAGE 2
+
+
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.2       PUBLIC        Max7219_pinCLK
+  D:0090H         PUBLIC        P1
+  C:099BH         PUBLIC        _Write_Max7219_byte
+  B:00A0H.0       PUBLIC        Max7219_pinDIN
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0907H         PUBLIC        main
+  C:095FH         PUBLIC        _Delay_xms
+  C:0800H         PUBLIC        Init_MAX7219
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:00A0H.1       PUBLIC        Max7219_pinCS
+  C:0887H         PUBLIC        disp1
+  D:00C8H         PUBLIC        T2CON
+  C:097FH         PUBLIC        _Write_Max7219
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  -------         DO            
+  D:000DH         SYMBOL        i
+  D:000EH         SYMBOL        j
+  -------         ENDDO         
+  C:0907H         LINE#         48
+  C:0907H         LINE#         49
+  C:0907H         LINE#         51
+  C:090EH         LINE#         52
+  C:0911H         LINE#         53
+  C:0911H         LINE#         54
+  C:0911H         LINE#         58
+  C:0914H         LINE#         59
+  C:0914H         LINE#         63
+  C:0916H         LINE#         64
+  C:0919H         LINE#         65
+  C:0919H         LINE#         66
+  C:091EH         LINE#         67
+  C:0941H         LINE#         68
+  C:0942H         LINE#         69
+  C:094BH         LINE#         70
+  C:094DH         LINE#         72
+  C:0956H         LINE#         73
+  C:095DH         LINE#         75
+  -------         ENDPROC       MAIN
+  -------         PROC          INIT_MAX7219
+  -------         DO            
+  D:000FH         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         77
+  C:0800H         LINE#         78
+  C:0800H         LINE#         86
+  C:0802H         LINE#         87
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/26/2014  15:05:13  PAGE 3
+
+
+  C:0805H         LINE#         88
+  C:0805H         LINE#         89
+  C:080AH         LINE#         90
+  C:080FH         LINE#         91
+  C:0818H         LINE#         92
+  C:081AH         LINE#         93
+  C:081BH         LINE#         94
+  C:081DH         LINE#         95
+  C:0820H         LINE#         96
+  C:0820H         LINE#         97
+  C:0825H         LINE#         98
+  C:082AH         LINE#         99
+  C:0833H         LINE#         100
+  C:0835H         LINE#         101
+  C:0836H         LINE#         102
+  C:0838H         LINE#         103
+  C:083BH         LINE#         104
+  C:083BH         LINE#         105
+  C:0840H         LINE#         106
+  C:0845H         LINE#         107
+  C:084EH         LINE#         108
+  C:0850H         LINE#         109
+  C:0851H         LINE#         110
+  C:0853H         LINE#         111
+  C:0856H         LINE#         112
+  C:0856H         LINE#         113
+  C:085BH         LINE#         114
+  C:0860H         LINE#         115
+  C:0869H         LINE#         116
+  C:086BH         LINE#         117
+  C:086DH         LINE#         118
+  C:0870H         LINE#         119
+  C:0870H         LINE#         120
+  C:0875H         LINE#         121
+  C:087AH         LINE#         122
+  C:0883H         LINE#         123
+  C:0885H         LINE#         124
+  C:0886H         LINE#         125
+  -------         ENDPROC       INIT_MAX7219
+  -------         PROC          _WRITE_MAX7219
+  D:0007H         SYMBOL        address1
+  D:0009H         SYMBOL        dat1
+  D:000AH         SYMBOL        address2
+  D:000BH         SYMBOL        dat2
+  -------         DO            
+  D:000CH         SYMBOL        i
+  -------         ENDDO         
+  C:097FH         LINE#         126
+  C:0983H         LINE#         127
+  C:0983H         LINE#         129
+  C:0985H         LINE#         130
+  C:0988H         LINE#         131
+  C:098DH         LINE#         132
+  C:0992H         LINE#         133
+  C:0997H         LINE#         134
+  C:0998H         LINE#         136
+  C:099AH         LINE#         137
+BL51 BANKED LINKER/LOCATER V6.22                                                      08/26/2014  15:05:13  PAGE 4
+
+
+  -------         ENDPROC       _WRITE_MAX7219
+  -------         PROC          _WRITE_MAX7219_BYTE
+  D:0007H         SYMBOL        DATA
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:099BH         LINE#         143
+  C:099BH         LINE#         144
+  C:099BH         LINE#         146
+  C:099DH         LINE#         147
+  C:099DH         LINE#         148
+  C:099FH         LINE#         149
+  C:09A3H         LINE#         150
+  C:09A7H         LINE#         151
+  C:09A9H         LINE#         152
+  C:09ABH         LINE#         153
+  -------         ENDPROC       _WRITE_MAX7219_BYTE
+  -------         PROC          _DELAY_XMS
+  D:0006H         SYMBOL        x
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:095FH         LINE#         154
+  C:095FH         LINE#         155
+  C:095FH         LINE#         157
+  C:0969H         LINE#         158
+  C:097EH         LINE#         159
+  -------         ENDPROC       _DELAY_XMS
+  -------         ENDMOD        MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_MAX7219?MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 01ACH BYTE (20%) *
+******************************************************************************
+
+Program Size: data=17.0 xdata=0 code=443
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

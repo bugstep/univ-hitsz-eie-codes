@@ -1,0 +1,11 @@
+* source X
+R_R19         N29190 TEMPERATURE  30.2k TC=0,0 
+X_U9         N29184 N29190 +10V -10V TEMPERATURE LM741
+X_U7         0 TMP20 REFERENCE T TMP20 
+R_R18         0 N29190  20k TC=0,0 
+R_R20         TMP20 N29184  100k TC=0,0 
+V_V7         +10V 0 10Vdc
+V_V10         T 0  AC 0
++SIN 40 10 .001 0 0 0
+V_V6         -10V 0 -10Vdc
+V_V8         REFERENCE 0 3.5Vdc
